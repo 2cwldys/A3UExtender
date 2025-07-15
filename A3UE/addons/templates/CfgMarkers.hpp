@@ -8,4 +8,19 @@ class CfgMarkers
 		icon = QPATHTOFOLDER(Pictures\Markers\marker_aaf_torn_co.paa);
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_aaf_torn_co.paa);
 	};
+
+	class RESE_MARKER_BSAA: flag_NATO 
+	{
+		name = "BSAA";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_bsaa.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_bsaa.paa);
+	};
+
+	class RESE_MARKER_UCORPS: flag_NATO 
+	{
+		name = "Umbrella Corporation";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_ucorps.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_ucorps.paa);
+	};
+
 };

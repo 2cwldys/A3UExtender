@@ -1,6 +1,8 @@
+Build.ps1
 .vscode/
 .github/
 build
+*.code-workspace
 *.biprivatekey
 *.log
 *.pbo

@@ -56,6 +56,36 @@ class Templates
         description = "This is a new template, called the A3 AAF (NEW)!"; // If this isn't included, no description will show (unless inherited from the base class.)
     };
 
+    class RESE_REBS_BSAA : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\RESE); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Reb"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\RESE\bsaa_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "BSAA"; // Name shown in the select menu.
+        file = "RESE_Rebs_BSAA"; // The template file name - .sqf, that gets appended automatically.
+        description = "A global paramilitary task force formed to combat the rising threat of bioterrorism and bio-organic weapons (B.O.W.s). Operating under international oversight, the BSAA deploys elite agents to hotspots around the world, tasked with identifying, neutralizing, and containing biohazard outbreaks before they escalate. Equipped with advanced technology and backed by global intelligence, the BSAA stands as humanity’s first line of defense against bioengineered horrors."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
+    class RESE_OCC_UCORPS : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\RESE); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Occ"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\RESE\uc_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "Umbrella Corporation"; // Name shown in the select menu.
+        file = "RESE_AI_UCORPS"; // The template file name - .sqf, that gets appended automatically.
+        description = "A ruthless private military force operating under the shadow of the Umbrella Corporation. Specializing in biohazard containment, black ops, and corporate warfare, the Umbrella Corps are elite soldiers enhanced with cutting-edge tech and zero moral restraint. Their true mission: protect Umbrella’s secrets—at any cost."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
+    class RESE_INV_UCORPS : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\RESE); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Inv"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\RESE\uc_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "Umbrella Corporation"; // Name shown in the select menu.
+        file = "RESE_AI_UCORPS"; // The template file name - .sqf, that gets appended automatically.
+        description = "A ruthless private military force operating under the shadow of the Umbrella Corporation. Specializing in biohazard containment, black ops, and corporate warfare, the Umbrella Corps are elite soldiers enhanced with cutting-edge tech and zero moral restraint. Their true mission: protect Umbrella’s secrets—at any cost."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
     /*
         Here we are creating a completely new class that inherits from Vanilla_AAF_New.
 
