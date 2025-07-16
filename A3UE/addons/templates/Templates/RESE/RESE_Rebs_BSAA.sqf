@@ -146,14 +146,17 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "hgun_Pistol_heavy_02_F",
-    "hgun_PDW2000_F",
-    "30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag",
+    "hgun_Pistol_heavy_02_F","hgun_Rook40_F",
+    "hgun_PDW2000_F","SMA_Mk17_16_black",
+    "30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag","30Rnd_556x45_Stanag_Tracer_Green","16Rnd_9x21_green_Mag",
     "6Rnd_45ACP_Cylinder","MiniGrenade","SmokeShell",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
-    "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk",
+    "GXTS_MTF_np_g3_full_w",
+    "rhsusf_protech_helmet_rhino_ess","GXTS_MTF_helmet_comms","GXTS_MTF_opscore_bala2",
+    "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk","MTF_LBT",
     "V_BandollierB_blk","V_BandollierB_cbr","V_BandollierB_rgr","V_BandollierB_khk","V_BandollierB_oli","V_Rangemaster_belt",
-    "Binocular",
+    "BHD_TACV1DSS","V_SSU_Carrier_Rig_MCAM_Black","V_SSU_Carrier_Special_Rig_MCAM_Black","V_CBRN_C","TAC_FS_FOL_B",
+    "Binocular","NVGoggles_OPFOR",
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol",
     "B_FieldPack_blk","B_AssaultPack_blk",
     ["launch_RPG32_F", 2], ["RPG32_F", 6]
@@ -167,66 +170,15 @@ _initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "U_IG_Guerilla1_1",
-    "U_IG_Guerilla2_1",
-    "U_IG_Guerilla2_2",
-    "U_IG_Guerilla2_3",
-    "U_IG_Guerilla3_1",
-    "U_IG_leader",
-    "U_IG_Guerrilla_6_1",
-    "U_I_G_resistanceLeader_F",
-    "U_I_L_Uniform_01_deserter_F",
-    "U_C_HunterBody_grn"
+    "GXTS_MTF_np_g3_full_w"
 ];
 
 private _dlcUniforms = [];
 
 private _headgear = [
-    "H_Booniehat_khk_hs",
-    "H_Booniehat_khk",
-    "H_Booniehat_tan",
-    "H_Booniehat_oli",    
-    "H_Bandanna_gry",
-    "H_Bandanna_blu",
-    "H_Bandanna_cbr",    
-    "H_Bandanna_khk_hs",
-    "H_Bandanna_khk",
-    "H_Bandanna_sgg",
-    "H_Bandanna_sand",
-    "H_Bandanna_surfer",
-    "H_Bandanna_surfer_blk",
-    "H_Bandanna_surfer_grn",
-    "H_Bandanna_camo",
-    "H_Watchcap_blk",
-    "H_Watchcap_cbr",
-    "H_Watchcap_camo",
-    "H_Watchcap_khk",
-    "H_Beret_blk",
-    "H_Booniehat_khk_hs",
-    "H_Booniehat_khk",
-    "H_Booniehat_oli",
-    "H_Booniehat_tan",
-    "H_Cap_oli",
-    "H_Cap_surfer",
-    "H_Cap_tan",
-    "H_Cap_oli_hs",
-    "H_Cap_blk",
-    "H_Cap_headphones",
-    "H_Hat_blue",
-    "H_Hat_brown",
-    "H_Hat_camo",
-    "H_Hat_checker",
-    "H_Hat_grey",
-    "H_Hat_tan",
-    "H_Cap_marshal",
-    "H_MilCap_blue",
-    "H_MilCap_gry",
-    "H_ShemagOpen_tan",
-    "H_ShemagOpen_khk",
-    "H_ShemagOpen_tan",
-    "H_Shemag_olive_hs",
-    "H_StrawHat",
-    "H_StrawHat_dark"
+    "rhsusf_protech_helmet_rhino_ess",
+    "GXTS_MTF_helmet_comms",
+    "GXTS_MTF_opscore_bala2"
 ];
 
 private _dlcheadgear = [];
@@ -255,13 +207,14 @@ _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["binoculars", ["Binocular"]];
+_loadoutData set ["NVGs", ["NVGoggles_OPFOR"]];
 _loadoutData set ["uniforms", _rebUniforms + _dlcUniforms]; ///check this one
 
-_loadoutData set ["glasses", ["G_Lady_Blue","G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"]];
+_loadoutData set ["glasses", ["G_Shades_Black","G_Shades_Blue","G_Aviator","G_Spectacles","G_Spectacles_Tinted","G_Tactical_Clear","G_Tactical_Black"]];
 _loadoutData set ["goggles", ["G_Lowprofile"]];
-_loadoutData set ["facemask", ["G_Bandanna_blk", "G_Bandanna_oli", "G_Bandanna_khk", "G_Bandanna_tan", "G_Bandanna_beast", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_aviator"]];
-_loadoutData set ["balaclavas", ["G_Balaclava_blk", "G_Balaclava_BlueStrips", "G_Balaclava_Flecktarn", "G_Balaclava_Halloween_01", "G_Balaclava_lowprofile", "G_Balaclava_oli", "G_Balaclava_Flames1", "G_Balaclava_Scarecrow_01", "G_Balaclava_Skull1", "G_Balaclava_Tropentarn"]];
-_loadoutData set ["argoFacemask", ["G_Bandanna_BlueFlame1", "G_Bandanna_BlueFlame2", "G_Bandanna_CandySkull", "G_Bandanna_OrangeFlame1", "G_Bandanna_RedFlame1", "G_Bandanna_Skull1", "G_Bandanna_Syndikat1", "G_Bandanna_Syndikat2","G_Bandanna_Skull2", "G_Bandanna_Vampire_01"]];
+_loadoutData set ["facemask", ["avon_fm12","avon_SF12"]];
+_loadoutData set ["balaclavas", ["G_Balaclava_blk"]];
+_loadoutData set ["argoFacemask", []];
 _loadoutData set ["facewearWS", []];
 _loadoutData set ["facewearContact", []];
 _loadoutData set ["facewearLawsOfWar", []];
