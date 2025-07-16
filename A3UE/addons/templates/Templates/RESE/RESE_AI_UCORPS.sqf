@@ -41,7 +41,7 @@ private _hasEF = "ef" in A3A_enabledDLC;
 
 private _basic = ["B_T_Quadbike_01_F"];
 private _unarmedVehicles = ["B_T_MRAP_01_F", "dvk_tcv_hunter_0"];
-private _armedVehicles = ["B_T_MRAP_01_gmg_F", "B_T_MRAP_01_hmg_F", "dvk_tcv_hunter_0_HMG"];
+private _armedVehicles = ["B_T_MRAP_01_gmg_F", "dvk_tcv_hunter_0_HMG"];
 private _Trucks = ["dvk_tcv_truck_cov_0", "B_T_Truck_01_transport_F"];
 private _cargoTrucks = ["dvk_tcv_truck_cargo0", "dvk_tcv_truck_cov_0"];
 private _ammoTrucks = ["dvk_tcv_truck_cargo0"];
@@ -356,17 +356,21 @@ _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["radios", ["ItemRadio"]];
 _loadoutData set ["gpses", ["ItemGPS"]];
-_loadoutData set ["NVGs", ["NVGoggles_INDEP"]];
+_loadoutData set ["NVGs", ["TRYK_balaclava_BLACK_NV"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["rangefinders", ["Rangefinder"]];
 
 _loadoutData set ["traitorUniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _loadoutData set ["traitorVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
-_loadoutData set ["traitorHats", ["H_Cap_grn", "H_Cap_oli"]];
+_loadoutData set ["traitorHats", ["H_Beret_blk"]];
+_loadoutData set ["traitorBala", ["GXTS_MTF_bala2"]];
+_loadoutData set ["traitorNVGs", ["dvk_corp_gasmask_b2"]];
 
 _loadoutData set ["officerUniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _loadoutData set ["officerVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
-_loadoutData set ["officerHats", ["H_Beret_Colonel", "H_Beret_02"]];
+_loadoutData set ["officerHats", ["H_Beret_CSAT_01_F"]];
+_loadoutData set ["officerBala", ["GXTS_MTF_bala2"]];
+_loadoutData set ["officerNVGs", ["dvk_corp_gasmask_b2"]];
 
 // if (_hasArtOfWar) then {
 // 	#include "..\DLC_content\gear\Artofwar\Vanilla_NATO.sqf"
@@ -381,10 +385,14 @@ _loadoutData set ["Hvests", []];
 _loadoutData set ["glVests", []];
 _loadoutData set ["backpacks", []];
 _loadoutData set ["atBackpacks", []];
-_loadoutData set ["longRangeRadios", ["B_RadioBag_01_wdl_F"]];
+_loadoutData set ["longRangeRadios", ["MTF_FCPC_117G_veil"]];
 _loadoutData set ["helmets", []];
-_loadoutData set ["slHat", ["H_Beret_02"]];
-_loadoutData set ["sniHats", ["H_Booniehat_wdl"]];
+_loadoutData set ["slHat", ["H_Beret_blk"]];
+_loadoutData set ["slBala", ["GXTS_MTF_bala2"]];
+_loadoutData set ["slNVGs", ["dvk_corp_gasmask_b2"]];
+_loadoutData set ["sniHats", ["H_SSU_Boonie_HS_Black"]];
+_loadoutData set ["sniBala", ["GXTS_MTF_bala2"]];
+_loadoutData set ["sniNVGs", ["dvk_corp_gasmask_b2"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
@@ -808,7 +816,7 @@ _pilotLoadoutData set ["helmets", ["H_WirelessEarPiece_F"]];
 
 private _squadLeaderTemplate = {
     [selectRandomWeighted ["helmets", 2, "slHat", 1]] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["slBala"] call _fnc_setFacewear;
     [["Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
     [["slUniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 
@@ -832,7 +840,7 @@ private _squadLeaderTemplate = {
     ["radios"] call _fnc_addRadio;
     ["gpses"] call _fnc_addGPS;
     ["binoculars"] call _fnc_addBinoculars;
-    ["NVGs"] call _fnc_addNVGs;
+    ["slNVGs"] call _fnc_addNVGs;
 };
 
 private _riflemanTemplate = {
@@ -1119,7 +1127,7 @@ private _machineGunnerTemplate = {
 
 private _marksmanTemplate = {
     [selectRandomWeighted ["helmets", 2, "sniHats", 1]] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["sniBala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
@@ -1141,12 +1149,12 @@ private _marksmanTemplate = {
     ["compasses"] call _fnc_addCompass;
     ["radios"] call _fnc_addRadio;
     ["rangefinders"] call _fnc_addBinoculars;
-    ["NVGs"] call _fnc_addNVGs;
+    ["sniNVGs"] call _fnc_addNVGs;
 };
 
 private _sniperTemplate = {
     ["sniHats"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["sniBala"] call _fnc_setFacewear;
     [["sniVests","vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
@@ -1168,7 +1176,7 @@ private _sniperTemplate = {
     ["compasses"] call _fnc_addCompass;
     ["radios"] call _fnc_addRadio;
     ["rangefinders"] call _fnc_addBinoculars;
-    ["NVGs"] call _fnc_addNVGs;
+    ["sniNVGs"] call _fnc_addNVGs;
 };
 
 private _policeTemplate = {
@@ -1235,7 +1243,7 @@ private _unarmedTemplate = {
 
 private _traitorTemplate = {
     ["traitorHats"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 1.25, "glasses", 0.75]] call _fnc_setFacewear;
+    ["traitorBala"] call _fnc_setFacewear;
     ["traitorVests"] call _fnc_setVest;
     ["traitorUniforms"] call _fnc_setUniform;
 
@@ -1250,11 +1258,12 @@ private _traitorTemplate = {
     ["watches"] call _fnc_addWatch;
     ["compasses"] call _fnc_addCompass;
     ["radios"] call _fnc_addRadio;
+    ["traitorNVGs"] call _fnc_addNVGs;
 };
 
 private _officerTemplate = {
     ["officerHats"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 1.25, "glasses", 0.75]] call _fnc_setFacewear;
+    ["officerBala"] call _fnc_setFacewear;
     ["officerVests"] call _fnc_setVest;
     ["officerUniforms"] call _fnc_setUniform;
 
@@ -1272,11 +1281,12 @@ private _officerTemplate = {
     ["watches"] call _fnc_addWatch;
     ["compasses"] call _fnc_addCompass;
     ["radios"] call _fnc_addRadio;
+    ["officerNVGs"] call _fnc_addNVGs;
 };
 
 private _patrolSniperTemplate = {
     ["sniHats"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["sniBala"] call _fnc_setFacewear;
     [["cloakVests","vests"] call _fnc_fallback] call _fnc_setVest;
     [["cloakUniforms","uniforms"] call _fnc_fallback] call _fnc_setUniform;
 
@@ -1296,12 +1306,12 @@ private _patrolSniperTemplate = {
     ["watches"] call _fnc_addWatch;
     ["compasses"] call _fnc_addCompass;
     ["radios"] call _fnc_addRadio;
-    ["NVGs"] call _fnc_addNVGs;
+    ["sniNVGs"] call _fnc_addNVGs;
 };
 
 private _patrolSpotterTemplate = {
     ["sniHats"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["sniBala"] call _fnc_setFacewear;
     [["cloakVests","vests"] call _fnc_fallback] call _fnc_setVest;
     [["cloakUniforms","uniforms"] call _fnc_fallback] call _fnc_setUniform;
 
@@ -1322,7 +1332,7 @@ private _patrolSpotterTemplate = {
     ["compasses"] call _fnc_addCompass;
     ["radios"] call _fnc_addRadio;
     ["rangefinders"] call _fnc_addBinoculars;
-    ["NVGs"] call _fnc_addNVGs;
+    ["sniNVGs"] call _fnc_addNVGs;
 };
 
 

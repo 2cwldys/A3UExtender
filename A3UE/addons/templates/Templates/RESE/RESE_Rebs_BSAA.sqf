@@ -208,10 +208,12 @@ _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["NVGs", ["NVGoggles_OPFOR"]];
+_loadoutData set ["backpacks", ["MTF_LBT"]];
+_loadoutData set ["vests", ["V_CBRN_C"]];
 _loadoutData set ["uniforms", _rebUniforms + _dlcUniforms]; ///check this one
 
 _loadoutData set ["glasses", ["G_Shades_Black","G_Shades_Blue","G_Aviator","G_Spectacles","G_Spectacles_Tinted","G_Tactical_Clear","G_Tactical_Black"]];
-_loadoutData set ["goggles", ["G_Lowprofile"]];
+_loadoutData set ["goggles", ["G_Combat"]];
 _loadoutData set ["facemask", ["avon_fm12","avon_SF12"]];
 _loadoutData set ["balaclavas", ["G_Balaclava_blk"]];
 _loadoutData set ["argoFacemask", []];
@@ -278,6 +280,8 @@ _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials
 
 private _squadLeaderTemplate = {
     ["uniforms"] call _fnc_setUniform;
+    ["vests"] call _fnc_setVest;
+    ["backpacks"] call _fnc_setBackpack;
     [selectRandomWeighted [[], 1.25, "glasses", 1, "goggles", 0.75, "facemask", 1, "balaclavas", 1, "argoFacemask", 1 , "facewearWS", 0.75, "facewearContact", 0.3, "facewearLawsOfWar", 0.5, "facewearGM", 0.3, "facewearCLSA", 0.2,"facewearSOG", 0.3,"facewearSPE", 0.2]] call _fnc_setFacewear;
 
     ["items_medical_standard"] call _fnc_addItemSet;
@@ -291,6 +295,8 @@ private _squadLeaderTemplate = {
 
 private _riflemanTemplate = {
     ["uniforms"] call _fnc_setUniform;
+    ["vests"] call _fnc_setVest;
+    ["backpacks"] call _fnc_setBackpack;
     [selectRandomWeighted [[], 1.25, "glasses", 1, "goggles", 0.75, "facemask", 1, "balaclavas", 1, "argoFacemask", 1 , "facewearWS", 0.75, "facewearContact", 0.3, "facewearLawsOfWar", 0.5, "facewearGM", 0.3, "facewearCLSA", 0.2, "facewearSOG", 0.3,"facewearSPE", 0.2]] call _fnc_setFacewear;
     
     ["items_medical_standard"] call _fnc_addItemSet;
