@@ -147,8 +147,8 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 
 private _initialRebelEquipment = [
     "hgun_Pistol_heavy_02_F","hgun_Rook40_F",
-    "hgun_PDW2000_F","SMA_Mk17_16_black",
-    "30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag","30Rnd_556x45_Stanag_Tracer_Green","16Rnd_9x21_green_Mag",
+    "hgun_PDW2000_F","SMA_Mk17_16_black","rhs_weap_m24sws",
+    "30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag","30Rnd_556x45_Stanag_Tracer_Green","16Rnd_9x21_green_Mag","rhsusf_5rnd_762x51_m62_mag",
     "6Rnd_45ACP_Cylinder","MiniGrenade","SmokeShell",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "GXTS_MTF_np_g3_full_w",
@@ -156,7 +156,7 @@ private _initialRebelEquipment = [
     "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk","MTF_LBT",
     "V_BandollierB_blk","V_BandollierB_cbr","V_BandollierB_rgr","V_BandollierB_khk","V_BandollierB_oli","V_Rangemaster_belt",
     "BHD_TACV1DSS","V_SSU_Carrier_Rig_MCAM_Black","V_SSU_Carrier_Special_Rig_MCAM_Black","V_CBRN_C","TAC_FS_FOL_B",
-    "Binocular","NVGoggles_OPFOR",
+    "Binocular","NVGoggles_OPFOR","rhs_acc_m8541_low","rhsusf_acc_m24_muzzlehider_black",
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol",
     "B_FieldPack_blk","B_AssaultPack_blk",
     ["launch_RPG32_F", 2], ["RPG32_F", 6]
@@ -208,8 +208,6 @@ _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["NVGs", ["NVGoggles_OPFOR"]];
-_loadoutData set ["backpacks", ["MTF_LBT"]];
-_loadoutData set ["vests", ["V_CBRN_C"]];
 _loadoutData set ["uniforms", _rebUniforms + _dlcUniforms]; ///check this one
 
 _loadoutData set ["glasses", ["G_Shades_Black","G_Shades_Blue","G_Aviator","G_Spectacles","G_Spectacles_Tinted","G_Tactical_Clear","G_Tactical_Black"]];
@@ -280,8 +278,6 @@ _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials
 
 private _squadLeaderTemplate = {
     ["uniforms"] call _fnc_setUniform;
-    ["vests"] call _fnc_setVest;
-    ["backpacks"] call _fnc_setBackpack;
     [selectRandomWeighted [[], 1.25, "glasses", 1, "goggles", 0.75, "facemask", 1, "balaclavas", 1, "argoFacemask", 1 , "facewearWS", 0.75, "facewearContact", 0.3, "facewearLawsOfWar", 0.5, "facewearGM", 0.3, "facewearCLSA", 0.2,"facewearSOG", 0.3,"facewearSPE", 0.2]] call _fnc_setFacewear;
 
     ["items_medical_standard"] call _fnc_addItemSet;
@@ -295,8 +291,6 @@ private _squadLeaderTemplate = {
 
 private _riflemanTemplate = {
     ["uniforms"] call _fnc_setUniform;
-    ["vests"] call _fnc_setVest;
-    ["backpacks"] call _fnc_setBackpack;
     [selectRandomWeighted [[], 1.25, "glasses", 1, "goggles", 0.75, "facemask", 1, "balaclavas", 1, "argoFacemask", 1 , "facewearWS", 0.75, "facewearContact", 0.3, "facewearLawsOfWar", 0.5, "facewearGM", 0.3, "facewearCLSA", 0.2, "facewearSOG", 0.3,"facewearSPE", 0.2]] call _fnc_setFacewear;
     
     ["items_medical_standard"] call _fnc_addItemSet;

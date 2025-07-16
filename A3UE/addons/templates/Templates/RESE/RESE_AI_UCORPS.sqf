@@ -359,6 +359,7 @@ _loadoutData set ["gpses", ["ItemGPS"]];
 _loadoutData set ["NVGs", ["TRYK_balaclava_BLACK_NV"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["rangefinders", ["Rangefinder"]];
+_loadoutData set ["bala", ["WAINO_BLC_BK"]];
 
 _loadoutData set ["traitorUniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _loadoutData set ["traitorVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
@@ -388,10 +389,10 @@ _loadoutData set ["atBackpacks", []];
 _loadoutData set ["longRangeRadios", ["MTF_FCPC_117G_veil"]];
 _loadoutData set ["helmets", []];
 _loadoutData set ["slHat", ["H_Beret_blk"]];
-_loadoutData set ["slBala", ["GXTS_MTF_bala2"]];
+_loadoutData set ["slBala", ["WAINO_BLC_BK"]];
 _loadoutData set ["slNVGs", ["dvk_corp_gasmask_b2"]];
 _loadoutData set ["sniHats", ["H_SSU_Boonie_HS_Black"]];
-_loadoutData set ["sniBala", ["GXTS_MTF_bala2"]];
+_loadoutData set ["sniBala", ["WAINO_BLC_BK"]];
 _loadoutData set ["sniNVGs", ["dvk_corp_gasmask_b2"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
@@ -428,17 +429,9 @@ _loadoutData set ["items_crew_extras", []];
 _loadoutData set ["items_unarmed_extras", []];
 
 _loadoutData set ["glasses", [
-    "G_Aviator",
-    "G_Shades_Black",
-    "G_Shades_Red",
-    "G_Spectacles",
-    "G_Spectacles_Tinted",
-    "G_Sport_Red",
-    "G_Sport_Blackred",
-    "G_Tactical_Clear",
-    "G_Tactical_Black"
+    "WAINO_BLC_BK"
 ]];
-_loadoutData set ["goggles", ["G_Combat"]];
+_loadoutData set ["goggles", ["WAINO_BLC_BK"]];
 
 //TODO - ACE overrides for misc essentials, medical and engineer gear
 
@@ -679,6 +672,7 @@ _militaryLoadoutData set ["marksmanRifles", [
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _policeLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _policeLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
+_policeLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 _policeLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
 private _helmets = ["TAC_SF10H"];
 
@@ -706,6 +700,8 @@ _militiaLoadoutData set ["glVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC
 _militiaLoadoutData set ["backpacks", ["B_SSU_TacticalPack_Black"]];
 _militiaLoadoutData set ["atBackpacks", ["B_SSU_TacticalPack_Black"]];
 _militiaLoadoutData set ["helmets", ["TAC_SF10H"]];
+_militiaLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
+_militiaLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
 
 _militiaLoadoutData set ["slRifles", [
     ["arifle_MX_GL_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], ["UGL_FlareWhite_F", "UGL_FlareWhite_F", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell"], ""],
@@ -754,12 +750,16 @@ private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
 _crewLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _crewLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _crewLoadoutData set ["helmets", ["TAC_SF10H"]];
+_crewLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
+_crewLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
 _pilotLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _pilotLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _pilotLoadoutData set ["helmets", ["H_WirelessEarPiece_F"]];
+_pilotLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
+_pilotLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 
 //
 // if (_hasMarksman) then {
@@ -815,7 +815,7 @@ _pilotLoadoutData set ["helmets", ["H_WirelessEarPiece_F"]];
 
 
 private _squadLeaderTemplate = {
-    [selectRandomWeighted ["helmets", 2, "slHat", 1]] call _fnc_setHelmet;
+    ["slHat"] call _fnc_setHelmet;
     ["slBala"] call _fnc_setFacewear;
     [["Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
     [["slUniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
@@ -845,7 +845,7 @@ private _squadLeaderTemplate = {
 
 private _riflemanTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
@@ -871,7 +871,7 @@ private _riflemanTemplate = {
 
 private _radiomanTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     ["longRangeRadios"] call _fnc_setBackpack;
@@ -898,7 +898,7 @@ private _radiomanTemplate = {
 
 private _medicTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     [["Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     ["backpacks"] call _fnc_setBackpack;
@@ -924,7 +924,7 @@ private _medicTemplate = {
 
 private _grenadierTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     [["Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
@@ -956,7 +956,7 @@ private _grenadierTemplate = {
 
 private _explosivesExpertTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     [["glVests", "vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     ["backpacks"] call _fnc_setBackpack;
@@ -988,7 +988,7 @@ private _explosivesExpertTemplate = {
 
 private _engineerTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     ["backpacks"] call _fnc_setBackpack;
@@ -1017,7 +1017,7 @@ private _engineerTemplate = {
 
 private _latTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     ["backpacks"] call _fnc_setBackpack;
@@ -1047,7 +1047,7 @@ private _latTemplate = {
 
 private _atTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     [["atBackpacks", "backpacks"] call _fnc_fallback] call _fnc_setBackpack;
@@ -1074,7 +1074,7 @@ private _atTemplate = {
 
 private _aaTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     [["atBackpacks", "backpacks"] call _fnc_fallback] call _fnc_setBackpack;
@@ -1101,7 +1101,7 @@ private _aaTemplate = {
 
 private _machineGunnerTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     ["backpacks"] call _fnc_setBackpack;
@@ -1126,7 +1126,7 @@ private _machineGunnerTemplate = {
 };
 
 private _marksmanTemplate = {
-    [selectRandomWeighted ["helmets", 2, "sniHats", 1]] call _fnc_setHelmet;
+    ["sniHats"] call _fnc_setHelmet;
     ["sniBala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
@@ -1204,7 +1204,7 @@ private _policeTemplate = {
 
 private _crewTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    ["bala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
