@@ -356,7 +356,7 @@ _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["radios", ["ItemRadio"]];
 _loadoutData set ["gpses", ["ItemGPS"]];
-_loadoutData set ["NVGs", ["TRYK_balaclava_BLACK_NV"]];
+_loadoutData set ["NVGs", []];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["rangefinders", ["Rangefinder"]];
 _loadoutData set ["bala", ["WAINO_BLC_BK"]];
@@ -364,13 +364,13 @@ _loadoutData set ["bala", ["WAINO_BLC_BK"]];
 _loadoutData set ["traitorUniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _loadoutData set ["traitorVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _loadoutData set ["traitorHats", ["H_Beret_blk"]];
-_loadoutData set ["traitorBala", ["GXTS_MTF_bala2"]];
+_loadoutData set ["traitorBala", ["WAINO_BLC_BK"]];
 _loadoutData set ["traitorNVGs", ["dvk_corp_gasmask_b2"]];
 
 _loadoutData set ["officerUniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _loadoutData set ["officerVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
-_loadoutData set ["officerHats", ["H_Beret_CSAT_01_F"]];
-_loadoutData set ["officerBala", ["GXTS_MTF_bala2"]];
+_loadoutData set ["officerHats", ["H_Beret_Colonel"]];
+_loadoutData set ["officerBala", ["WAINO_BLC_BK"]];
 _loadoutData set ["officerNVGs", ["dvk_corp_gasmask_b2"]];
 
 // if (_hasArtOfWar) then {
@@ -600,7 +600,7 @@ _militaryLoadoutData set ["backpacks", ["B_SSU_TacticalPack_Black"]];
 _militaryLoadoutData set ["atBackpacks", ["B_SSU_TacticalPack_Black"]];
 _militaryLoadoutData set ["helmets", ["TAC_SF10H"]];
 _militaryLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
-_militaryLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
+_militaryLoadoutData set ["NVGs", ["NVGoggles_OPFOR"]];
 
 _militaryLoadoutData set ["slRifles", [
 ["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_red"], [], ""],
@@ -674,7 +674,7 @@ private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _policeLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _policeLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _policeLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
-_policeLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
+_policeLoadoutData set ["NVGs", []];
 
 private _helmets = ["TAC_SF10H"];
 
@@ -703,7 +703,7 @@ _militiaLoadoutData set ["backpacks", ["B_SSU_TacticalPack_Black"]];
 _militiaLoadoutData set ["atBackpacks", ["B_SSU_TacticalPack_Black"]];
 _militiaLoadoutData set ["helmets", ["TAC_SF10H"]];
 _militiaLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
-_militiaLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
+_militiaLoadoutData set ["NVGs", ["NVGoggles_OPFOR"]];
 
 _militiaLoadoutData set ["slRifles", [
     ["arifle_MX_GL_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], ["UGL_FlareWhite_F", "UGL_FlareWhite_F", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell"], ""],
@@ -752,15 +752,15 @@ private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
 _crewLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _crewLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _crewLoadoutData set ["helmets", ["TAC_SF10H"]];
-_crewLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
+_crewLoadoutData set ["NVGs", ["NVGoggles_OPFOR"]];
 _crewLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
 _pilotLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _pilotLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
-_pilotLoadoutData set ["helmets", ["H_WirelessEarPiece_F"]];
-_pilotLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
+_pilotLoadoutData set ["helmets", ["H_Beret_blk"]];
+_pilotLoadoutData set ["NVGs", ["NVGoggles_OPFOR"]];
 _pilotLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 
 //
