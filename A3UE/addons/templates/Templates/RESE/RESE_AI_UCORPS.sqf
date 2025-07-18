@@ -365,13 +365,13 @@ _loadoutData set ["traitorUniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _loadoutData set ["traitorVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _loadoutData set ["traitorHats", ["H_Beret_blk"]];
 _loadoutData set ["traitorBala", ["WAINO_BLC_BK"]];
-_loadoutData set ["traitorNVGs", ["dvk_corp_gasmask_b2"]];
+_loadoutData set ["traitorNVGs", ["NVGoggles_OPFOR"]];
 
 _loadoutData set ["officerUniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _loadoutData set ["officerVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _loadoutData set ["officerHats", ["H_Beret_Colonel"]];
 _loadoutData set ["officerBala", ["WAINO_BLC_BK"]];
-_loadoutData set ["officerNVGs", ["dvk_corp_gasmask_b2"]];
+_loadoutData set ["officerNVGs", ["NVGoggles_OPFOR"]];
 
 // if (_hasArtOfWar) then {
 // 	#include "..\DLC_content\gear\Artofwar\Vanilla_NATO.sqf"
@@ -388,12 +388,12 @@ _loadoutData set ["backpacks", []];
 _loadoutData set ["atBackpacks", []];
 _loadoutData set ["longRangeRadios", ["MTF_FCPC_117G_veil"]];
 _loadoutData set ["helmets", []];
-_loadoutData set ["slHat", ["H_Beret_blk"]];
+_loadoutData set ["slHat", ["TAC_SF10H"]];
 _loadoutData set ["slBala", ["WAINO_BLC_BK"]];
-_loadoutData set ["slNVGs", ["dvk_corp_gasmask_b2"]];
-_loadoutData set ["sniHats", ["H_SSU_Boonie_HS_Black"]];
+_loadoutData set ["slNVGs", ["NVGoggles_OPFOR"]];
+_loadoutData set ["sniHats", ["TAC_SF10H"]];
 _loadoutData set ["sniBala", ["WAINO_BLC_BK"]];
-_loadoutData set ["sniNVGs", ["dvk_corp_gasmask_b2"]];
+_loadoutData set ["sniNVGs", ["NVGoggles_OPFOR"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
