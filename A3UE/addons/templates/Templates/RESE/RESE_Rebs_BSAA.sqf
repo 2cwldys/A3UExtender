@@ -147,7 +147,7 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 
 private _initialRebelEquipment = [
     "hgun_Pistol_heavy_02_F","hgun_Rook40_F",
-    "hgun_PDW2000_F","SMA_Mk17_16_black","rhs_weap_m24sws",
+    "hgun_PDW2000_F","rhs_weap_m27iar","rhs_weap_m24sws",
     "30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag","30Rnd_556x45_Stanag_Tracer_Green","16Rnd_9x21_green_Mag","rhsusf_5rnd_762x51_m62_mag",
     "6Rnd_45ACP_Cylinder","MiniGrenade","SmokeShell",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
@@ -156,7 +156,7 @@ private _initialRebelEquipment = [
     "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk","MTF_LBT",
     "V_BandollierB_blk","V_BandollierB_cbr","V_BandollierB_rgr","V_BandollierB_khk","V_BandollierB_oli","V_Rangemaster_belt",
     "BHD_TACV1DSS","V_SSU_Carrier_Rig_MCAM_Black","V_SSU_Carrier_Special_Rig_MCAM_Black","V_CBRN_C","TAC_FS_FOL_B",
-    "Binocular","NVGoggles_OPFOR","rhs_acc_m8541_low","rhsusf_acc_m24_muzzlehider_black",
+    "Binocular","NVGoggles_OPFOR","rhsusf_acc_m24_muzzlehider_black",
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol",
     "B_FieldPack_blk","B_AssaultPack_blk",
     ["launch_RPG32_F", 2], ["RPG32_F", 6]
@@ -184,8 +184,8 @@ private _headgear = [
 private _dlcheadgear = [];
 
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
-
 ["headgear", _headgear + _dlcheadgear] call _fnc_saveToTemplate;
+
 /////////////////////
 ///  Identities   ///
 /////////////////////
@@ -213,7 +213,7 @@ _loadoutData set ["uniforms", _rebUniforms + _dlcUniforms]; ///check this one
 _loadoutData set ["glasses", ["G_Shades_Black","G_Shades_Blue","G_Aviator","G_Spectacles","G_Spectacles_Tinted","G_Tactical_Clear","G_Tactical_Black"]];
 _loadoutData set ["goggles", ["G_Combat"]];
 _loadoutData set ["facemask", ["avon_fm12","avon_SF12"]];
-_loadoutData set ["balaclavas", ["G_Balaclava_blk"]];
+_loadoutData set ["balaclavas", ["WAINO_BLC_BK"]];
 _loadoutData set ["argoFacemask", []];
 _loadoutData set ["facewearWS", []];
 _loadoutData set ["facewearContact", []];

@@ -318,7 +318,7 @@ _loadoutData set ["missileATLaunchers", [
 _loadoutData set ["AALaunchers", [
 ["launch_B_Titan_olive_F", "", "acc_pointer_IR", "", ["Titan_AA"], [], ""]
 ]];
-_loadoutData set ["sidearms", ["hgun_P07_khk_F", "hgun_P07_blk_F"]];
+_loadoutData set ["sidearms", ["hgun_P07_blk_F", "hgun_P07_blk_F"]];
 
 _loadoutData set ["ATMines", ["ATMine_Range_Mag"]];
 _loadoutData set ["APMines", ["APERSMine_Range_Mag"]];
@@ -455,43 +455,43 @@ _sfLoadoutData set ["glasses", [
 _sfLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 
 _sfLoadoutData set ["slRifles", [
-    ["SMA_HK416vfg", "muzzle_snds_H", "acc_pointer_IR", "optic_MRCO", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-    ["SMA_HK416vfg", "muzzle_snds_H", "acc_pointer_IR", "optic_Hamr", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-    ["SMA_HK416vfg", "muzzle_snds_H_khk_F", "acc_pointer_IR", "optic_MRCO", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-    ["SMA_HK416vfg", "muzzle_snds_H_khk_F", "acc_pointer_IR", "optic_Hamr", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-    ["SMA_HK416GL", "muzzle_snds_H", "acc_pointer_IR", "optic_MRCO", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXslglammo, ""],
-    ["SMA_HK416GL", "muzzle_snds_H", "acc_pointer_IR", "optic_Hamr", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXslglammo, ""],
-    ["SMA_HK416GL", "muzzle_snds_H_khk_F", "acc_pointer_IR", "optic_MRCO", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXslglammo, ""],
-    ["SMA_HK416GL", "muzzle_snds_H_khk_F", "acc_pointer_IR", "optic_Hamr", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXslglammo, ""]
+    ["rhs_weap_hk416d10", "muzzle_snds_H", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+    ["rhs_weap_hk416d10", "muzzle_snds_H", "acc_pointer_IR", "optic_Hamr", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+    ["rhs_weap_hk416d10", "muzzle_snds_H", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+    ["rhs_weap_hk416d10", "muzzle_snds_H", "acc_pointer_IR", "optic_Hamr", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+    ["rhs_weap_hk416d10_m320", "muzzle_snds_H", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXslglammo, ""],
+    ["rhs_weap_hk416d10_m320", "muzzle_snds_H", "acc_pointer_IR", "optic_Hamr", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXslglammo, ""],
+    ["rhs_weap_hk416d10_m320", "muzzle_snds_H", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXslglammo, ""],
+    ["rhs_weap_hk416d10_m320", "muzzle_snds_H", "acc_pointer_IR", "optic_Hamr", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXslglammo, ""]
 ]];
 _sfLoadoutData set ["rifles", [
-    ["SMA_HK416vfg", "muzzle_snds_H_khk_F", "acc_pointer_IR", "optic_Holosight_khk_F", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-    ["SMA_HK416vfg", "muzzle_snds_H", "acc_pointer_IR", "optic_Holosight_blk_F", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""]
+    ["rhs_weap_hk416d10", "muzzle_snds_H", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+    ["rhs_weap_hk416d10", "muzzle_snds_H", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""]
 ]];
 _sfLoadoutData set ["carbines", [
-    ["arifle_MXC_khk_F", "muzzle_snds_H_khk_F", "acc_pointer_IR", "optic_Holosight_khk_F", ["30Rnd_65x39_caseless_khaki_mag", "30Rnd_65x39_caseless_khaki_mag", "30Rnd_65x39_caseless_khaki_mag_Tracer"], [], ""],
-    ["arifle_MXC_Black_F", "muzzle_snds_H", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
+    ["arifle_MXC_Black_F", "muzzle_snds_H", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
+    ["arifle_MXC_Black_F", "muzzle_snds_H", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
 ]];
 _sfLoadoutData set ["grenadeLaunchers", [
-    ["SMA_HK416GL", "muzzle_snds_H_khk_F", "acc_pointer_IR", "optic_Holosight_khk_F", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXglammo, ""],
-    ["SMA_HK416GL", "muzzle_snds_H", "acc_pointer_IR", "optic_Holosight_blk_F", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXglammo, ""]
+    ["rhs_weap_hk416d10_m320", "muzzle_snds_H", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXglammo, ""],
+    ["rhs_weap_hk416d10_m320", "muzzle_snds_H", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXglammo, ""]
 ]];
 _sfLoadoutData set ["machineGuns", [
     ["rhs_weap_m249_pip", "muzzle_snds_H", "acc_pointer_IR", "rhsusf_acc_eotech_xps3", ["rhsusf_200rnd_556x45_M855_box"], [], "bipod_01_F_blk"]
 ]];
 
 _sfLoadoutData set ["marksmanRifles", [
-    ["arifle_MXM_khk_F", "muzzle_snds_H_khk_F", "acc_pointer_IR", "optic_SOS", ["30Rnd_65x39_caseless_khaki_mag", "30Rnd_65x39_caseless_khaki_mag", "30Rnd_65x39_caseless_khaki_mag_Tracer"], [], "bipod_01_F_khk"],
-    ["arifle_MXM_khk_F", "muzzle_snds_H_khk_F", "acc_pointer_IR", "optic_NVS", ["30Rnd_65x39_caseless_khaki_mag", "30Rnd_65x39_caseless_khaki_mag", "30Rnd_65x39_caseless_khaki_mag_Tracer"], [], "bipod_01_F_khk"],
-    ["arifle_MXM_khk_F", "muzzle_snds_H_khk_F", "acc_pointer_IR", "optic_Hamr", ["30Rnd_65x39_caseless_khaki_mag", "30Rnd_65x39_caseless_khaki_mag", "30Rnd_65x39_caseless_khaki_mag_Tracer"], [], "bipod_01_F_khk"],
+    ["arifle_MXM_Black_F", "muzzle_snds_H", "acc_pointer_IR", "optic_SOS", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_khk"],
+    ["arifle_MXM_Black_F", "muzzle_snds_H", "acc_pointer_IR", "optic_NVS", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_khk"],
+    ["arifle_MXM_Black_F", "muzzle_snds_H", "acc_pointer_IR", "optic_Hamr", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_khk"],
     ["srifle_EBR_F", "muzzle_snds_B", "acc_pointer_IR", "optic_SOS", ["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"], [], "bipod_01_F_blk"],
     ["srifle_EBR_F", "muzzle_snds_B", "acc_pointer_IR", "optic_NVS", ["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"], [], "bipod_01_F_blk"],
     ["srifle_EBR_F", "muzzle_snds_B", "acc_pointer_IR", "optic_Hamr", ["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"], [], "bipod_01_F_blk"]
 ]];
 
 _sfLoadoutData set ["SMGs", [
-["SMG_01_F", "muzzle_snds_acp", "", "optic_Holosight", ["30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
-["SMG_01_F", "muzzle_snds_acp", "", "optic_Aco_smg", ["30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
+["SMG_01_F", "muzzle_snds_acp", "", "optic_Holosight", ["30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
+["SMG_01_F", "muzzle_snds_acp", "", "optic_Aco_smg", ["30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
 ["SMG_03_camo", "muzzle_snds_570", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
 ["SMG_03C_camo", "muzzle_snds_570", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
 ["SMG_03_TR_camo", "muzzle_snds_570", "acc_pointer_IR", "optic_Holosight_blk_F", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
@@ -538,36 +538,36 @@ _eliteLoadoutData set ["sidearms", [
 ]];
 
 _eliteLoadoutData set ["slRifles", [
-    ["SMA_HK416vfg", "", "acc_pointer_IR", "optic_MRCO", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-    ["SMA_HK416vfg", "", "acc_pointer_IR", "optic_Hamr", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-    ["SMA_HK416vfg", "", "acc_pointer_IR", "optic_MRCO", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-    ["SMA_HK416vfg", "", "acc_pointer_IR", "optic_Hamr", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-    ["SMA_HK416GL", "", "acc_pointer_IR", "optic_MRCO", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXslglammo, ""],
-    ["SMA_HK416GL", "", "acc_pointer_IR", "optic_Hamr", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXslglammo, ""],
-    ["SMA_HK416GL", "", "acc_pointer_IR", "optic_MRCO", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXslglammo, ""],
-    ["SMA_HK416GL", "", "acc_pointer_IR", "optic_Hamr", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXslglammo, ""]
+    ["rhs_weap_hk416d10", "", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+    ["rhs_weap_hk416d10", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+    ["rhs_weap_hk416d10", "", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+    ["rhs_weap_hk416d10", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+    ["rhs_weap_hk416d10_m320", "", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXslglammo, ""],
+    ["rhs_weap_hk416d10_m320", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXslglammo, ""],
+    ["rhs_weap_hk416d10_m320", "", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXslglammo, ""],
+    ["rhs_weap_hk416d10_m320", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXslglammo, ""]
 ]];
 _eliteLoadoutData set ["rifles", [
-["SMA_HK416vfg", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-["SMA_HK416vfg", "", "acc_pointer_IR", "optic_MRCO", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-["SMA_HK416vfg", "", "acc_pointer_IR", "optic_Hamr", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""],
-["SMA_HK416vfg", "", "acc_pointer_IR", "optic_ACO_grn", ["SMA_30Rnd_556x45_M855A1_Tracer"], [], ""]
+["rhs_weap_hk416d10", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+["rhs_weap_hk416d10", "", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+["rhs_weap_hk416d10", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
+["rhs_weap_hk416d10", "", "acc_pointer_IR", "optic_Aco", ["30Rnd_556x45_Stanag_Tracer_Red"], [], ""]
 ]];
 _eliteLoadoutData set ["carbines", [
-["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
-["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_ACO_grn", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
-["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_Aco", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
-["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_ACO_grn", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
+["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
+["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_Aco", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
+["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_Aco", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
+["arifle_MXC_Black_F", "", "acc_pointer_IR", "optic_Aco", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
 ]];
 _eliteLoadoutData set ["grenadeLaunchers", [
-["SMA_HK416GL", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXglammo, ""],
-["SMA_HK416GL", "", "acc_pointer_IR", "optic_MRCO", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXglammo, ""],
-["SMA_HK416GL", "", "acc_pointer_IR", "optic_Hamr", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXglammo, ""],
-["SMA_HK416GL", "", "acc_pointer_IR", "optic_ACO_grn", ["SMA_30Rnd_556x45_M855A1_Tracer"], _MXglammo, ""]
+["rhs_weap_hk416d10_m320", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXglammo, ""],
+["rhs_weap_hk416d10_m320", "", "acc_pointer_IR", "optic_MRCO", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXglammo, ""],
+["rhs_weap_hk416d10_m320", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXglammo, ""],
+["rhs_weap_hk416d10_m320", "", "acc_pointer_IR", "optic_Aco", ["30Rnd_556x45_Stanag_Tracer_Red"], _MXglammo, ""]
 ]];
 _eliteLoadoutData set ["SMGs", [
-["SMG_01_F", "", "", "optic_Holosight", ["30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
-["SMG_01_F", "", "", "optic_Aco_smg", ["30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
+["SMG_01_F", "", "", "optic_Holosight", ["30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
+["SMG_01_F", "", "", "optic_Aco_smg", ["30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
 ["SMG_03_camo", "", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
 ["SMG_03C_camo", "", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
 ["SMG_03_TR_camo", "", "acc_pointer_IR", "optic_Holosight_blk_F", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
@@ -583,8 +583,8 @@ _eliteLoadoutData set ["machineGuns", [
 ]];
 
 _eliteLoadoutData set ["marksmanRifles", [
-    ["arifle_MXM_Black_F", "", "acc_pointer_IR", "optic_SOS", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
-    ["arifle_MXM_Black_F", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"]
+    ["arifle_MXM_Black_F", "", "acc_pointer_IR", "optic_SOS", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
+    ["arifle_MXM_Black_F", "", "acc_pointer_IR", "optic_Hamr", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"]
 ]];
 
 /////////////////////////////////
@@ -599,39 +599,40 @@ _militaryLoadoutData set ["glVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "U
 _militaryLoadoutData set ["backpacks", ["B_SSU_TacticalPack_Black"]];
 _militaryLoadoutData set ["atBackpacks", ["B_SSU_TacticalPack_Black"]];
 _militaryLoadoutData set ["helmets", ["TAC_SF10H"]];
+_militaryLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 _militaryLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
 
 _militaryLoadoutData set ["slRifles", [
 ["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_red"], [], ""],
 ["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_MRCO", ["30Rnd_556x45_Stanag_red"], [], ""],
 ["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_Hamr", ["30Rnd_556x45_Stanag_red"], [], ""],
-["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_556x45_Stanag_red"], [], ""],
+["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_Aco", ["30Rnd_556x45_Stanag_red"], [], ""],
 ["rhs_weap_m4a1_carryhandle_m203", "", "acc_flashlight", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_red"], _MXslglammo, ""],
 ["rhs_weap_m4a1_carryhandle_m203", "", "acc_flashlight", "optic_MRCO", ["30Rnd_556x45_Stanag_red"], _MXslglammo, ""],
 ["rhs_weap_m4a1_carryhandle_m203", "", "acc_flashlight", "optic_Hamr", ["30Rnd_556x45_Stanag_red"], _MXslglammo, ""],
-["rhs_weap_m4a1_carryhandle_m203", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_556x45_Stanag_red"], _MXslglammo, ""]
+["rhs_weap_m4a1_carryhandle_m203", "", "acc_flashlight", "optic_Aco", ["30Rnd_556x45_Stanag_red"], _MXslglammo, ""]
 ]];
 _militaryLoadoutData set ["rifles", [
 ["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_red"], [], ""],
 ["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_MRCO", ["30Rnd_556x45_Stanag_red"], [], ""],
 ["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_Hamr", ["30Rnd_556x45_Stanag_red"], [], ""],
-["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_556x45_Stanag_red"], [], ""]
+["rhs_weap_m4a1_carryhandle", "", "acc_flashlight", "optic_Aco", ["30Rnd_556x45_Stanag_red"], [], ""]
 ]];
 _militaryLoadoutData set ["carbines", [
-["arifle_MXC_Black_F", "", "acc_flashlight", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
-["arifle_MXC_Black_F", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
-["arifle_MXC_Black_F", "", "acc_flashlight", "optic_Aco", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
-["arifle_MXC_Black_F", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
+["arifle_MXC_Black_F", "", "acc_flashlight", "optic_Holosight_blk_F", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
+["arifle_MXC_Black_F", "", "acc_flashlight", "optic_Aco", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
+["arifle_MXC_Black_F", "", "acc_flashlight", "optic_Aco", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""],
+["arifle_MXC_Black_F", "", "acc_flashlight", "optic_Aco", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
 ]];
 _militaryLoadoutData set ["grenadeLaunchers", [
 ["rhs_weap_m4a1_carryhandle_m203", "", "acc_flashlight", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_red"], _MXglammo, ""],
 ["rhs_weap_m4a1_carryhandle_m203", "", "acc_flashlight", "optic_MRCO", ["30Rnd_556x45_Stanag_red"], _MXglammo, ""],
 ["rhs_weap_m4a1_carryhandle_m203", "", "acc_flashlight", "optic_Hamr", ["30Rnd_556x45_Stanag_red"], _MXglammo, ""],
-["rhs_weap_m4a1_carryhandle_m203", "", "acc_flashlight", "optic_ACO_grn", ["30Rnd_556x45_Stanag_red"], _MXglammo, ""]
+["rhs_weap_m4a1_carryhandle_m203", "", "acc_flashlight", "optic_Aco", ["30Rnd_556x45_Stanag_red"], _MXglammo, ""]
 ]];
 _militaryLoadoutData set ["SMGs", [
-["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Holosight", ["30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
-["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco_smg", ["30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
+["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Holosight", ["30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
+["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco_smg", ["30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
 ["SMG_03_camo", "", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
 ["SMG_03C_camo", "", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
 ["SMG_03_TR_camo", "", "acc_flashlight", "optic_Holosight_blk_F", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
@@ -653,13 +654,13 @@ _militaryLoadoutData set ["sniperRifles", [
 _militaryLoadoutData set ["sidearms", [
 ["hgun_Pistol_heavy_01_green_F", "", "acc_flashlight_pistol", "", ["11Rnd_45ACP_Mag"], [], ""],
 ["hgun_P07_blk_F", "", "", "", ["16Rnd_9x21_Mag"], [], ""],
-["hgun_P07_khk_F", "", "", "", ["16Rnd_9x21_Mag"], [], ""]
+["hgun_P07_blk_F", "", "", "", ["16Rnd_9x21_Mag"], [], ""]
 ]];
 
 _militaryLoadoutData set ["marksmanRifles", [
-    ["arifle_MXM_Black_F", "", "acc_flashlight", "optic_NVS", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
-    ["arifle_MXM_Black_F", "", "acc_flashlight", "optic_SOS", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
-    ["arifle_MXM_Black_F", "", "acc_flashlight", "optic_Hamr", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
+    ["arifle_MXM_Black_F", "", "acc_flashlight", "optic_NVS", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
+    ["arifle_MXM_Black_F", "", "acc_flashlight", "optic_SOS", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
+    ["arifle_MXM_Black_F", "", "acc_flashlight", "optic_Hamr", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
     ["srifle_EBR_F", "", "acc_flashlight", "optic_SOS", ["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"], [], "bipod_01_F_blk"],
     ["srifle_EBR_F", "", "acc_flashlight", "optic_Hamr", ["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"], [], "bipod_01_F_blk"],
     ["srifle_EBR_F", "", "acc_flashlight", "optic_NVS", ["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"], [], "bipod_01_F_blk"]
@@ -674,11 +675,12 @@ _policeLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform"]];
 _policeLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _policeLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 _policeLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
+
 private _helmets = ["TAC_SF10H"];
 
 _policeLoadoutData set ["helmets", _helmets];
 _policeLoadoutData set ["SMGs", [
-["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco_smg", ["30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
+["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco_smg", ["30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
 ["SMG_03_camo", "", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
 ["SMG_03C_camo", "", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
 ["SMG_03_TR_camo", "", "acc_flashlight", "optic_Aco_smg", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
@@ -704,30 +706,30 @@ _militiaLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 _militiaLoadoutData set ["NVGs", ["TRYK_G_bala_ess_NV"]];
 
 _militiaLoadoutData set ["slRifles", [
-    ["arifle_MX_GL_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], ["UGL_FlareWhite_F", "UGL_FlareWhite_F", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell"], ""],
-    ["arifle_MX_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
+    ["arifle_MX_GL_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], ["UGL_FlareWhite_F", "UGL_FlareWhite_F", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell"], ""],
+    ["arifle_MX_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
 ]];
 _militiaLoadoutData set ["rifles", [
-    ["arifle_MX_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
+    ["arifle_MX_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
 ]];
 _militiaLoadoutData set ["carbines", [
-    ["arifle_MXC_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
+    ["arifle_MXC_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], ""]
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
-    ["arifle_MX_GL_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
+    ["arifle_MX_GL_Black_F", "", "acc_flashlight", "", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militiaLoadoutData set ["machineGuns", [
     ["arifle_MX_SW_Black_F", "", "acc_flashlight", "", ["100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"]
 ]];
 _militiaLoadoutData set ["marksmanRifles", [
-    ["arifle_MXM_Black_F", "", "acc_flashlight", "optic_Hamr", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
+    ["arifle_MXM_Black_F", "", "acc_flashlight", "optic_Hamr", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
     ["srifle_EBR_F", "", "acc_flashlight", "optic_Hamr", ["10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag"], [], "bipod_01_F_blk"],
-    ["arifle_MXM_Black_F", "", "acc_flashlight", "optic_MRCO", ["30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
+    ["arifle_MXM_Black_F", "", "acc_flashlight", "optic_MRCO", ["30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer", "30Rnd_65x39_caseless_black_mag_Tracer"], [], "bipod_01_F_blk"],
     ["srifle_EBR_F", "", "acc_flashlight", "optic_MRCO", ["10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag","10Rnd_Mk14_762x51_Mag"], [], "bipod_01_F_blk"]
 ]];
 
 _militiaLoadoutData set ["SMGs", [
-["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco_smg", ["30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
+["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco_smg", ["30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "30Rnd_45ACP_Mag_SMG_01_Tracer_Red"], [], ""],
 ["SMG_03_camo", "", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
 ["SMG_03C_camo", "", "", "", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
 ["SMG_03_TR_camo", "", "acc_flashlight", "optic_Aco_smg", ["50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03","50Rnd_570x28_SMG_03"], [], ""],
@@ -740,7 +742,7 @@ _militiaLoadoutData set ["sniperRifles", [
     ["srifle_LRR_F", "", "", "optic_SOS", ["7Rnd_408_Mag","7Rnd_408_Mag"], [], ""],
     ["srifle_LRR_F", "", "", "optic_LRPS", ["7Rnd_408_Mag","7Rnd_408_Mag"], [], ""]
 ]];
-_militiaLoadoutData set ["sidearms", ["hgun_ACPC2_F", "hgun_P07_blk_F", "hgun_P07_khk_F"]];
+_militiaLoadoutData set ["sidearms", ["hgun_ACPC2_F", "hgun_P07_blk_F", "hgun_P07_blk_F"]];
 
 //////////////////////////
 //    Misc Loadouts     //
