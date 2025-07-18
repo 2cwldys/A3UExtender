@@ -1183,6 +1183,7 @@ private _sniperTemplate = {
 
 private _policeTemplate = {
     ["helmets"] call _fnc_setHelmet;
+    ["bala"] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
