@@ -63,7 +63,7 @@ class Templates
         flagTexture = QPATHTOFOLDER(Templates\RESE\bsaa_flag_co.paa); // Path to an icon to be displayed in the select menu.
         name = "BSAA"; // Name shown in the select menu.
         file = "RESE_Rebs_BSAA"; // The template file name - .sqf, that gets appended automatically.
-        description = "A global paramilitary task force formed to combat the rising threat of bioterrorism and bio-organic weapons (B.O.W.s). Operating under international oversight, the BSAA deploys elite agents to hotspots around the world, tasked with identifying, neutralizing, and containing biohazard outbreaks before they escalate. Equipped with advanced technology and backed by global intelligence, the BSAA stands as humanity’s first line of defense against bioengineered horrors."; // If this isn't included, no description will show (unless inherited from the base class.)
+        description = "(Easiest) A global paramilitary task force formed to combat the rising threat of bioterrorism and bio-organic weapons (B.O.W.s). Operating under international oversight, the BSAA deploys elite agents to hotspots around the world, tasked with identifying, neutralizing, and containing biohazard outbreaks before they escalate. Equipped with advanced technology and backed by global intelligence, the BSAA stands as humanity’s first line of defense against bioengineered horrors."; // If this isn't included, no description will show (unless inherited from the base class.)
     };
 
     class RESE_REBS_BUMB : Vanilla_Base
@@ -73,7 +73,17 @@ class Templates
         flagTexture = QPATHTOFOLDER(Templates\RESE\bumb_flag_co.paa); // Path to an icon to be displayed in the select menu.
         name = "Blue Umbrella"; // Name shown in the select menu.
         file = "RESE_Rebs_BUMB"; // The template file name - .sqf, that gets appended automatically.
-        description = "An early paramilitary partner to the BSAA, Blue Umbrella is made up of ex-Umbrella scientists and operatives working to contain the very threats they once helped create. Backed by corporate funding and operating under close UN oversight, they blend advanced bioweapon tech with field-tested tactics. Their past is checkered—but their mission is clear."; // If this isn't included, no description will show (unless inherited from the base class.)
+        description = "(Easy) An early paramilitary partner to the BSAA, Blue Umbrella is made up of ex-Umbrella scientists and operatives working to contain the very threats they once helped create. Backed by corporate funding and operating under close UN oversight, they blend advanced bioweapon tech with field-tested tactics. Their past is checkered—but their mission is clear."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
+    class RESE_REBS_SURV : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\RESE); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Reb"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\RESE\surv_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "Survivors"; // Name shown in the select menu.
+        file = "RESE_Rebs_SURV"; // The template file name - .sqf, that gets appended automatically.
+        description = "(Hard, Recommended Start) Good hearted refugee escapades from various quarantine zones, such as Racoon City, realizing that the true strength is to band together with sharing what supplies they have; frequently working with the BSAA or Blue Umbrella to achieve their common goals for humanity."; // If this isn't included, no description will show (unless inherited from the base class.)
     };
 
     class RESE_RIV_BSURV : Vanilla_Base
@@ -84,6 +94,16 @@ class Templates
         name = "Bandit Survivors"; // Name shown in the select menu.
         file = "RESE_Riv_BSURV"; // The template file name - .sqf, that gets appended automatically.
         description = "Once ordinary civilians, now ruthless scavengers shaped by outbreak after outbreak. The Bandit Survivors reject government aid and corporate promises, choosing instead to take what they need by force. Armed with salvaged gear and no regard for law or life, they thrive in chaos—feeding off the collapse of civilization."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
+    class RESE_RIV_UMBSC : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\RESE); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Riv"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\RESE\umbsc_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "Umbrella Sleeper Cell"; // Name shown in the select menu.
+        file = "RESE_Riv_UMBSC"; // The template file name - .sqf, that gets appended automatically.
+        description = "An extremist rogue covert agency from within the higher intelligence echelons of Umbrella Corporation, operating on it's own seperate from High Command, tasked with infiltrating enemy alliances in order to destroy them; willing to turn on their own paramilitary and employees that get in the way, if it means achieving their aims."; // If this isn't included, no description will show (unless inherited from the base class.)
     };
 
     class RESE_OCC_UCORPS : Vanilla_Base

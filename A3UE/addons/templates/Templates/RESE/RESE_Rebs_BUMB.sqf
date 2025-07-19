@@ -153,6 +153,7 @@ private _initialRebelEquipment = [
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "B_FieldPack_blk",
     "UMBRELLAu","UmbrellaVest","Umbrella_H","WAINO_BLC_BK",
+    ["ItemRadio", 5], ["ItemGPS", 5],
     "Binocular","NVGoggles_INDEP","rhsusf_acc_m24_muzzlehider_black","muzzle_snds_570",
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol",
     "B_FieldPack_blk","B_AssaultPack_blk",

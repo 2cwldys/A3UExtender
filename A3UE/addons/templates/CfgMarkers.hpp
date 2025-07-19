@@ -23,6 +23,13 @@ class CfgMarkers
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_bumb.paa);
 	};
 
+	class RESE_MARKER_SURV: flag_NATO 
+	{
+		name = "Survivors";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_surv.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_surv.paa);
+	};
+
 	class RESE_MARKER_UCORPS: flag_NATO 
 	{
 		name = "Umbrella Corporation";
