@@ -66,6 +66,26 @@ class Templates
         description = "A global paramilitary task force formed to combat the rising threat of bioterrorism and bio-organic weapons (B.O.W.s). Operating under international oversight, the BSAA deploys elite agents to hotspots around the world, tasked with identifying, neutralizing, and containing biohazard outbreaks before they escalate. Equipped with advanced technology and backed by global intelligence, the BSAA stands as humanity’s first line of defense against bioengineered horrors."; // If this isn't included, no description will show (unless inherited from the base class.)
     };
 
+    class RESE_REBS_BUMB : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\RESE); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Reb"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\RESE\bumb_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "Blue Umbrella"; // Name shown in the select menu.
+        file = "RESE_Rebs_BUMB"; // The template file name - .sqf, that gets appended automatically.
+        description = "An early paramilitary partner to the BSAA, Blue Umbrella is made up of ex-Umbrella scientists and operatives working to contain the very threats they once helped create. Backed by corporate funding and operating under close UN oversight, they blend advanced bioweapon tech with field-tested tactics. Their past is checkered—but their mission is clear."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
+    class RESE_RIV_BSURV : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\RESE); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Riv"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\RESE\bsurv_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "Bandit Survivors"; // Name shown in the select menu.
+        file = "RESE_Riv_BSURV"; // The template file name - .sqf, that gets appended automatically.
+        description = "Once ordinary civilians, now ruthless scavengers shaped by outbreak after outbreak. The Bandit Survivors reject government aid and corporate promises, choosing instead to take what they need by force. Armed with salvaged gear and no regard for law or life, they thrive in chaos—feeding off the collapse of civilization."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
     class RESE_OCC_UCORPS : Vanilla_Base
     {
         basepath = QPATHTOFOLDER(Templates\RESE); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
