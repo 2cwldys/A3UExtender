@@ -361,13 +361,13 @@ _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["rangefinders", ["Rangefinder"]];
 _loadoutData set ["bala", ["WAINO_BLC_BK"]];
 
-_loadoutData set ["traitorUniforms", ["TRYK_U_B_BLKBLK_CombatUniform","TRYK_U_B_BLK","RE2_HUNK_Uniform","dvk_corp_up_u","dvk_corp_u"]];
+_loadoutData set ["traitorUniforms", ["TRYK_U_B_BLKBLK_CombatUniform", "TRYK_U_B_BLK", "RE2_HUNK_Uniform", "dvk_corp_up_u", "dvk_corp_u"]];
 _loadoutData set ["traitorVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _loadoutData set ["traitorHats", ["H_Beret_blk"]];
 _loadoutData set ["traitorBala", ["WAINO_BLC_BK"]];
 _loadoutData set ["traitorNVGs", ["NVGoggles_OPFOR"]];
 
-_loadoutData set ["officerUniforms", ["TRYK_U_B_BLKBLK_CombatUniform","TRYK_U_B_BLK","RE2_HUNK_Uniform","dvk_corp_up_u","dvk_corp_u"]];
+_loadoutData set ["officerUniforms", ["TRYK_U_B_BLKBLK_CombatUniform", "TRYK_U_B_BLK", "RE2_HUNK_Uniform", "dvk_corp_up_u", "dvk_corp_u"]];
 _loadoutData set ["officerVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _loadoutData set ["officerHats", ["H_Beret_Colonel"]];
 _loadoutData set ["officerBala", ["WAINO_BLC_BK"]];
@@ -441,7 +441,7 @@ _loadoutData set ["goggles", ["WAINO_BLC_BK"]];
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData set ["NVGs", ["dvk_corp_gasmask_b2"]];
-_sfLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform","TRYK_U_B_BLK","RE2_HUNK_Uniform","dvk_corp_up_u","dvk_corp_u"]];  
+_sfLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform", "TRYK_U_B_BLK", "RE2_HUNK_Uniform", "dvk_corp_up_u", "dvk_corp_u"]];  
 _sfLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _sfLoadoutData set ["Hvests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _sfLoadoutData set ["glVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
@@ -517,7 +517,7 @@ _sfLoadoutData set ["sidearms", [
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["NVGs", ["dvk_corp_gasmask_b2"]]; 
-_eliteLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform","TRYK_U_B_BLK","RE2_HUNK_Uniform","dvk_corp_up_u","dvk_corp_u"]];
+_eliteLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform", "TRYK_U_B_BLK", "RE2_HUNK_Uniform", "dvk_corp_up_u", "dvk_corp_u"]];
 _eliteLoadoutData set ["helmets", ["TRYK_H_PASGT_BLK"]];
 _eliteLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _eliteLoadoutData set ["Hvests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
@@ -592,7 +592,7 @@ _eliteLoadoutData set ["marksmanRifles", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militaryLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform","TRYK_U_B_BLK","RE2_HUNK_Uniform","dvk_corp_up_u","dvk_corp_u"]];
+_militaryLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform", "TRYK_U_B_BLK", "RE2_HUNK_Uniform", "dvk_corp_up_u", "dvk_corp_u"]];
 _militaryLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _militaryLoadoutData set ["Hvests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _militaryLoadoutData set ["glVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
@@ -671,7 +671,7 @@ _militaryLoadoutData set ["marksmanRifles", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_policeLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform","TRYK_U_B_BLK","RE2_HUNK_Uniform","dvk_corp_up_u","dvk_corp_u"]];
+_policeLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform", "TRYK_U_B_BLK", "RE2_HUNK_Uniform", "dvk_corp_up_u", "dvk_corp_u"]];
 _policeLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _policeLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 _policeLoadoutData set ["NVGs", []];
@@ -695,7 +695,7 @@ _policeLoadoutData set ["sidearms", ["rhsusf_weap_glock17g4", "rhsusf_mag_17Rnd_
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militiaLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform","TRYK_U_B_BLK","RE2_HUNK_Uniform","dvk_corp_up_u","dvk_corp_u"]];
+_militiaLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform", "TRYK_U_B_BLK", "RE2_HUNK_Uniform", "dvk_corp_up_u", "dvk_corp_u"]];
 _militiaLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _militiaLoadoutData set ["Hvests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _militiaLoadoutData set ["glVests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
@@ -749,7 +749,7 @@ _militiaLoadoutData set ["sidearms", ["hgun_ACPC2_F", "hgun_P07_blk_F", "hgun_P0
 //////////////////////////
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; 
-_crewLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform","TRYK_U_B_BLK","RE2_HUNK_Uniform","dvk_corp_up_u","dvk_corp_u"]];
+_crewLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform", "TRYK_U_B_BLK", "RE2_HUNK_Uniform", "dvk_corp_up_u", "dvk_corp_u"]];
 _crewLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _crewLoadoutData set ["helmets", ["TAC_SF10H", "HUNK_Helmet", "H_Tank_black_F"]];
 _crewLoadoutData set ["NVGs", ["NVGoggles_OPFOR"]];
@@ -757,7 +757,7 @@ _crewLoadoutData set ["goggles", ["WAINO_BLC_BK"]];
 
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform","TRYK_U_B_BLK","RE2_HUNK_Uniform","dvk_corp_up_u","dvk_corp_u"]];
+_pilotLoadoutData set ["uniforms", ["TRYK_U_B_BLKBLK_CombatUniform", "TRYK_U_B_BLK", "RE2_HUNK_Uniform", "dvk_corp_up_u", "dvk_corp_u"]];
 _pilotLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _pilotLoadoutData set ["helmets", ["H_Beret_blk", "H_PilotHelmetHeli_B"]];
 _pilotLoadoutData set ["NVGs", ["NVGoggles_OPFOR"]];

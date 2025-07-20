@@ -9,7 +9,7 @@ private _hasMarksman = "mark" in A3A_enabledDLC;
 ///////////////////////////
 
 ["name", "UMBSC" ] call _fnc_saveToTemplate;
-["nameLeader", "Mal'fais"] call _fnc_saveToTemplate;
+["nameLeader", "Malfais"] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
 //       	Identities    			//
@@ -27,8 +27,8 @@ private _lightArmedVehicles = ["dvk_tcv_hunter_0_HMG"];
 private _lightUnarmedVehicles = ["dvk_tcv_hunter_0"];
 private _trucks = ["dvk_tcv_truck_cov_0"];
 private _apcs = ["B_T_APC_Wheeled_01_cannon_F"];
-private _tanks = ["B_T_UGV_01_olive_F","B_T_MBT_01_cannon_F","B_T_MBT_01_TUSK_F"];
-private _helis = ["B_Heli_Transport_01_F","B_Heli_Light_01_F","B_Heli_Transport_03_F"];
+private _tanks = ["B_T_UGV_01_olive_F", "B_T_MBT_01_cannon_F", "B_T_MBT_01_TUSK_F"];
+private _helis = ["B_Heli_Transport_01_F", "B_Heli_Light_01_F", "B_Heli_Transport_03_F"];
 
 // if (_hasAddonX) then {
 // 	_lightArmedVehicles append ["I_C_Offroad_02_AT_F", "I_C_Offroad_02_LMG_F"];
@@ -186,9 +186,9 @@ _loadoutData set ["smokeGrenades", ["SmokeShell"]];
 _loadoutData set ["signalsmokeGrenades", ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"]];
 
 _loadoutData set ["facewear", [
-    "WAINO_BLC_BK",
+    "WAINO_BLC_BK"
 ]];
-_loadoutData set ["fullmask", [	"WAINO_BLC_BK", "WAINO_BLC_BK", "WAINO_BLC_BK"]];
+_loadoutData set ["fullmask", [""]];
 
 _loadoutData set ["headgear", [
     "TAC_SF10H",
@@ -214,7 +214,7 @@ _loadoutData set ["uniforms", [
 ]];
 _loadoutData set ["heavyUniforms", []];
 
-private _helmets = [];
+private _helmets = ["TAC_SF10H", "HUNK_Helmet"];
 
 // if (_hasWs) then {
 // 	_helmets append ["lxWS_H_bmask_camo02", "lxWS_H_PASGT_facewear_olive_F"];
@@ -273,12 +273,12 @@ _loadoutData set ["items_unarmed_extras", []];
 //////////////////////////
 
 private _crewLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData set ["vests", ["V_BandollierB_oli"]];
+_crewLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
 _crewLoadoutData set ["helmets", ["H_Tank_black_F"]];
 
 private _pilotLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["vests", ["V_BandollierB_oli"]];
-_pilotLoadoutData set ["helmets", ["H_PilotHelmetHeli_O"]];
+_pilotLoadoutData set ["vests", ["UC_V1P2", "UC_V_RRV", "UC_PBDFG2SACD", "UC_V_CTBA", "UC_CTV1"]];
+_pilotLoadoutData set ["helmets", ["H_Beret_blk", "H_PilotHelmetHeli_B"]];
 
 
 // ##################### DO NOT TOUCH ANYTHING BELOW THIS LINE #####################

@@ -93,7 +93,7 @@ class Templates
         flagTexture = QPATHTOFOLDER(Templates\RESE\bsurv_flag_co.paa); // Path to an icon to be displayed in the select menu.
         name = "Bandit Survivors"; // Name shown in the select menu.
         file = "RESE_Riv_BSURV"; // The template file name - .sqf, that gets appended automatically.
-        description = "Once ordinary civilians, now ruthless scavengers shaped by outbreak after outbreak. The Bandit Survivors reject government aid and corporate promises, choosing instead to take what they need by force. Armed with salvaged gear and no regard for law or life, they thrive in chaos—feeding off the collapse of civilization."; // If this isn't included, no description will show (unless inherited from the base class.)
+        description = "(Standard) Once ordinary civilians, now ruthless scavengers shaped by outbreak after outbreak. The Bandit Survivors reject government aid and corporate promises, choosing instead to take what they need by force. Armed with salvaged gear and no regard for law or life, they thrive in chaos—feeding off the collapse of civilization."; // If this isn't included, no description will show (unless inherited from the base class.)
     };
 
     class RESE_RIV_UMBSC : Vanilla_Base
@@ -103,7 +103,7 @@ class Templates
         flagTexture = QPATHTOFOLDER(Templates\RESE\umbsc_flag_co.paa); // Path to an icon to be displayed in the select menu.
         name = "Umbrella Sleeper Cell"; // Name shown in the select menu.
         file = "RESE_Riv_UMBSC"; // The template file name - .sqf, that gets appended automatically.
-        description = "An extremist rogue covert agency from within the higher intelligence echelons of Umbrella Corporation, operating on it's own seperate from High Command, tasked with infiltrating enemy alliances in order to destroy them; willing to turn on their own paramilitary and employees that get in the way, if it means achieving their aims."; // If this isn't included, no description will show (unless inherited from the base class.)
+        description = "(Challenging) An extremist rogue covert agency from within the higher intelligence echelons of Umbrella Corporation, operating on it's own seperate from High Command, tasked with infiltrating enemy alliances in order to destroy them; willing to turn on their own paramilitary and employees that get in the way, if it means achieving their aims."; // If this isn't included, no description will show (unless inherited from the base class.)
     };
 
     class RESE_OCC_UCORPS : Vanilla_Base

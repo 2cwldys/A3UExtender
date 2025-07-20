@@ -1,3 +1,5 @@
+#include "..\..\script_component.hpp"
+
 private _hasWs = "ws" in A3A_enabledDLC;
 private _hasMarksman = "mark" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
@@ -21,7 +23,7 @@ private _hasEF = "ef" in A3A_enabledDLC;
 
 ["name", "SURV"] call _fnc_saveToTemplate;
 
-["flag", "Flag_Green_F"] call _fnc_saveToTemplate;
+["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Templates\RESE\surv_flag_co.paa)] call _fnc_saveToTemplate;
 ["flagMarkerType", "RESE_MARKER_SURV"] call _fnc_saveToTemplate;
 
@@ -34,17 +36,17 @@ private _vehicleAA = [];
 
 private _vehiclesBoat = ["I_C_Boat_Transport_02_F" , "I_SDV_01_F" , "I_Boat_Armed_01_minigun_F" , "O_Boat_Armed_01_hmg_F"];
 
-private _vehiclePlane = ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
-
 private _vehiclesMedical = [];
 
 private _vehiclesSupply = ["C_Van_01_box_F"];
+
+private _vehiclePlane = ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
 
 private _vehicleCivPlane = ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
 
 private _vehiclesCivCar = ["C_Offroad_01_F", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_SUV_01_F"];
 private _CivTruck = ["C_Truck_02_transport_F", "C_Truck_02_covered_F"];
-private _civHelicopters = ["C_Heli_Light_01_civil_F", "O_Heli_Light_02_unarmed_F" , "I_Heli_Transport_02_F"];
+private _civHelicopters = ["C_Heli_Light_01_civil_F", "a3a_C_Heli_Transport_02_F", "a3a_C_Heli_Light_02_blue_F"];
 
 private _CivBoat = ["C_Boat_Civil_01_F", "C_Rubberboat"];
 
@@ -62,8 +64,9 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
 
 // if (_hasKart) then {
-//   #include "..\DLC_content\vehicles\Kart\Rebel_kart.sqf" 
+//   #include "..\DLC_content\vehicles\Kart\Rebel_kart.sqf"  
 // };
+
 // if (_hasApex) then {
 //   #include "..\DLC_content\vehicles\Apex\Vanilla_FIA.sqf"  
 // };
@@ -112,16 +115,16 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 ["vehiclesCivSupply", _vehiclesSupply] call _fnc_saveToTemplate;
 ["vehiclesMedical", _vehiclesMedical] call _fnc_saveToTemplate;
 ["vehiclesBoat", _vehiclesBoat] call _fnc_saveToTemplate;
-["vehiclesCivHeli", _civHelicopters] call _fnc_saveToTemplate;
+["staticMortars", _staticMortars] call _fnc_saveToTemplate;
 ["staticMGs", _staticMG] call _fnc_saveToTemplate;
 ["staticAT", _staticAT] call _fnc_saveToTemplate;
+["vehiclesCivHeli", _civHelicopters] call _fnc_saveToTemplate;
 ["vehiclesBasic", _vehiclesBasic] call _fnc_saveToTemplate;
 ["vehiclesPlane", _vehiclePlane] call _fnc_saveToTemplate;
 ["vehiclesCivTruck", _CivTruck] call _fnc_saveToTemplate;
 ["vehiclesTruck", _VehTruck] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", _CivBoat] call _fnc_saveToTemplate;
 ["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
-["staticMortars", _staticMortars] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
 ["vehiclesCivCar", _vehiclesCivCar] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", _vehiclesLightUnarmed] call _fnc_saveToTemplate;
@@ -145,7 +148,7 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 private _initialRebelEquipment = [
     "hgun_P07_F",
     "rhs_weap_m24sws","rhs_weap_m14_rail",
-    "rhsusf_5Rnd_762x51_m118_special_Mag", "20Rnd_762_x51_Mag",
+    "rhsusf_5Rnd_762x51_m118_special_Mag", "20Rnd_762x51_Mag",
     "16Rnd_9x21_Mag","MiniGrenade","SmokeShell",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk","TRYK_B_tube_cyt",
@@ -173,40 +176,19 @@ _initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "U_BG_Guerilla2_1",
+    "U_IG_Guerilla1_1",
+    "U_IG_Guerilla2_1",
     "U_IG_Guerilla2_2",
     "U_IG_Guerilla2_3",
-    "U_I_C_Soldier_Para_5_F",
-    "U_I_C_Soldier_Para_3_F",
-    "U_I_C_Soldier_Para_2_F",
-    "U_I_C_Soldier_Camo_F",
-    "U_C_Poloshirt_blue",
-    "U_C_Poloshirt_burgundy",
-    "U_C_Poloshirt_redwhite",
-    "U_C_Poloshirt_salmon",
-    "U_C_Poloshirt_stripped",
-    "U_C_Poloshirt_tricolour",
-    "U_Competitor",
-    "U_O_SpecopsUniform_ocamo",
-    "U_B_survival_uniform",
-    "U_C_WorkerCoveralls",
-    "U_C_Poor_1",
-    "U_I_G_Story_Protagonist_F",
-    "TRYK_SUITS_BR_F",
-    "TRYK_SUITS_BLK_F",
-    "TRYK_ZARATAKI",
-    "TRYK_ZARATAKI2",
-    "TRYK_ZARATAKI3",
-    "TRYK_U_B_WDL_GRY_CombatUniform",
-    "TRYK_U_B_WDL_GRY_R_CombatUniform",
-    "WAINO_S_WHB_MTP"
+    "U_IG_Guerilla3_1",
+    "U_IG_leader",
+    "U_IG_Guerrilla_6_1",
+    "U_I_G_resistanceLeader_F",
+    "U_I_L_Uniform_01_deserter_F",
+    "U_C_HunterBody_grn"
 ];
 
 private _dlcUniforms = [];
-
-["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
-
-"EnochMen" call _fnc_saveNames;
 
 private _headgear = [
     "H_Booniehat_khk_hs",
@@ -253,69 +235,26 @@ private _headgear = [
     "H_ShemagOpen_tan",
     "H_Shemag_olive_hs",
     "H_StrawHat",
-    "H_StrawHat_dark",
-    "TRYK_H_Bandana_H",
-    "H_RacingHelmet_1_white_F",
-    "H_Beret_blk",
-    "H_HeadBandage_stained_F",
-    "H_HeadBandage_bloody_F",
-    "H_HeadSet_black_F",
-    "H_WirelessEarPiece_F",
-    "TRYK_H_woolhat",
-    "TRYK_H_woolhat_br",
-    "TRYK_H_woolhat_cu",
-    "TRYK_H_woolhat_CW",
-    "TRYK_H_woolhat_tan",
-    "TRYK_H_woolhat_WH",
-    "TRYK_H_headset2",
-    "UC_Bandana"
+    "H_StrawHat_dark"
 ];
 
 private _dlcheadgear = [];
 
-["headgear", _headgear + _dlcheadgear] call _fnc_saveToTemplate;
+["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
 
+["headgear", _headgear + _dlcheadgear] call _fnc_saveToTemplate;
 /////////////////////
 ///  Identities   ///
 /////////////////////
 
-["voices", ["Male01POL", "Male02POL", "Male03POL"]] call _fnc_saveToTemplate;
-private _faces = [
-    "LivonianHead_1", "LivonianHead_2", "LivonianHead_3", "LivonianHead_4",
-    "LivonianHead_5", "LivonianHead_6", "LivonianHead_7", "LivonianHead_8",
-    "LivonianHead_9", "LivonianHead_10",
-    "WhiteHead_01", "WhiteHead_02", "WhiteHead_03", "WhiteHead_04",
-    "WhiteHead_06", "WhiteHead_07", "WhiteHead_08", "WhiteHead_10", "WhiteHead_11",
-    "WhiteHead_13", "WhiteHead_15", "WhiteHead_16", "WhiteHead_17", "WhiteHead_18",
-    "WhiteHead_19", "WhiteHead_20", "WhiteHead_21"
-];
+private _faces = ["GreekHead_A3_02","GreekHead_A3_03","GreekHead_A3_04",
+"GreekHead_A3_05","GreekHead_A3_06","GreekHead_A3_07","GreekHead_A3_08",
+"GreekHead_A3_09","GreekHead_A3_10","GreekHead_A3_11","GreekHead_A3_12","GreekHead_A3_13",
+"GreekHead_A3_14","Ioannou","Mavros","Sturrock"];
+["voices", ["Male01GRE", "Male02GRE", "Male03GRE", "Male04GRE", "Male05GRE", "Male06GRE"]] call _fnc_saveToTemplate;
 ["faces", _faces] call _fnc_saveToTemplate;
 
-// if (_hasSPE) then {
-//   _faces append [
-//     #include "..\DLC_content\faces\SPE\SPE_white.sqf"
-//   ];
-// };
-// if (_hasSOG) then {
-//   _faces append [
-//     #include "..\DLC_content\faces\SOG\SOG_faces_nocamowhite.sqf"
-//   ];
-// };
-// if (_hasRF) then {
-//   _faces append [
-//     #include "..\DLC_content\faces\RF\RF_white.sqf"
-//   ];
-// };
-// if (_hasGM) then {
-//   _faces append [
-//     #include "..\DLC_content\faces\GM\GM_white.sqf"
-//   ];
-// };
-// if (_hasWS) then {
-//   _faces append [
-//     #include "..\DLC_content\faces\WS\WS_white.sqf"
-//   ];
-// };
+// #include "Vanilla_Reb_Vehicle_Attributes.sqf"
 
 //////////////////////////
 //       Loadouts       //
@@ -329,8 +268,8 @@ _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["uniforms", _rebUniforms + _dlcUniforms]; ///check this one
 
 _loadoutData set ["glasses", ["G_Lady_Blue","G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"]];
-_loadoutData set ["goggles", ["G_Lowprofile", "G_Combat"]];
-_loadoutData set ["facemask", ["G_Bandanna_blk", "G_Bandanna_oli", "G_Bandanna_khk", "G_Bandanna_tan", "G_Bandanna_beast", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_aviator", "MK503", "G_CBRN_M04_Hood", "G_CBRN_M04"]];
+_loadoutData set ["goggles", ["G_Lowprofile"]];
+_loadoutData set ["facemask", ["G_Bandanna_blk", "G_Bandanna_oli", "G_Bandanna_khk", "G_Bandanna_tan", "G_Bandanna_beast", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_aviator"]];
 _loadoutData set ["balaclavas", ["G_Balaclava_blk", "G_Balaclava_BlueStrips", "G_Balaclava_Flecktarn", "G_Balaclava_Halloween_01", "G_Balaclava_lowprofile", "G_Balaclava_oli", "G_Balaclava_Flames1", "G_Balaclava_Scarecrow_01", "G_Balaclava_Skull1", "G_Balaclava_Tropentarn"]];
 _loadoutData set ["argoFacemask", ["G_Bandanna_BlueFlame1", "G_Bandanna_BlueFlame2", "G_Bandanna_CandySkull", "G_Bandanna_OrangeFlame1", "G_Bandanna_RedFlame1", "G_Bandanna_Skull1", "G_Bandanna_Syndikat1", "G_Bandanna_Syndikat2","G_Bandanna_Skull2", "G_Bandanna_Vampire_01"]];
 _loadoutData set ["facewearWS", []];
@@ -342,43 +281,43 @@ _loadoutData set ["facewearSOG", []];
 _loadoutData set ["facewearSPE", []];
 
 // if (_hasWs) then {
-//     #include "..\DLC_content\gear\WS\Vanilla_FIA.sqf"
+//   #include "..\DLC_content\gear\WS\Vanilla_FIA.sqf"
 // };
 
 // if (_hasRF) then {
-//     #include "..\DLC_content\gear\RF\Vanilla_FIA.sqf"
+//   #include "..\DLC_content\gear\RF\Vanilla_FIA.sqf"
 // };
 
 // if (_hasContact) then {
-//     #include "..\DLC_content\gear\Contact\Vanilla_FIA.sqf"
+//   #include "..\DLC_content\gear\Contact\Vanilla_FIA.sqf"
 // };
 
 // if (_hasApex) then {
-//     #include "..\DLC_content\gear\Apex\Vanilla_FIA.sqf"
+//   #include "..\DLC_content\gear\Apex\Vanilla_FIA.sqf"
 // };
 
 // if (_hasLawsOfWar) then {
-//     #include "..\DLC_content\gear\Lawsofwar\Vanilla_FIA.sqf"
+//   #include "..\DLC_content\gear\Lawsofwar\Vanilla_FIA.sqf"
 // };
 
 // if (_hasGM) then {
-//     #include "..\DLC_content\gear\GM\Vanilla_FIA.sqf"
+//   #include "..\DLC_content\gear\GM\Vanilla_FIA.sqf"
 // };
 
 // if (_hasCSLA) then {
-//     #include "..\DLC_content\gear\CSLA\Vanilla_FIA.sqf"
+//   #include "..\DLC_content\gear\CSLA\Vanilla_FIA.sqf"
 // };
 
 // if (_hasArtOfWar) then {
-//     #include "..\DLC_content\gear\Artofwar\Vanilla_FIA.sqf"
+//   #include "..\DLC_content\gear\Artofwar\Vanilla_FIA.sqf"
 // };
 
 // if (_hasSOG) then {
-//     #include "..\DLC_content\gear\SOG\Vanilla_FIA.sqf"
+//   #include "..\DLC_content\gear\SOG\Vanilla_FIA.sqf"
 // };
 
 // if (_hasSPE) then {
-//     #include "..\DLC_content\gear\SPE\Vanilla_FIA.sqf"
+//   #include "..\DLC_content\gear\SPE\Vanilla_FIA.sqf"
 // };
 
 // if (isClass (configFile >> "cfgVehicles" >> "vnx_b_air_ac119_02_01")) then {
@@ -396,7 +335,7 @@ _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials
 
 private _squadLeaderTemplate = {
     ["uniforms"] call _fnc_setUniform;
-    [selectRandomWeighted [[], 1.25, "glasses", 1, "goggles", 0.75, "facemask", 1, "balaclavas", 1, "argoFacemask", 1 , "facewearWS", 0.75, "facewearContact", 0.3, "facewearLawsOfWar", 0.5, "facewearGM", 0.3, "facewearCLSA", 0.2, "facewearSOG", 0.3,"facewearSPE", 0.2]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 1.25, "glasses", 1, "goggles", 0.75, "facemask", 1, "balaclavas", 1, "argoFacemask", 1 , "facewearWS", 0.75, "facewearContact", 0.3, "facewearLawsOfWar", 0.5, "facewearGM", 0.3, "facewearCLSA", 0.2,"facewearSOG", 0.3,"facewearSPE", 0.2]] call _fnc_setFacewear;
 
     ["items_medical_standard"] call _fnc_addItemSet;
     ["items_miscEssentials"] call _fnc_addItemSet;
