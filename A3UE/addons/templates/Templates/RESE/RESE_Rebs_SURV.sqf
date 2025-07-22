@@ -146,11 +146,11 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "hgun_P07_F",
-    "rhs_weap_m24sws","rhs_weap_m14_rail",
-    "rhsusf_5Rnd_762x51_m118_special_Mag", "20Rnd_762x51_Mag",
-    "16Rnd_9x21_Mag","MiniGrenade","SmokeShell",
-    ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
+    "hgun_P07_F","hgun_Pistol_01_F",
+    "Bat_Clear","Bat_Spike","WBK_axe","Pipe_aluminium","FireAxe",
+    ["rhs_weap_M590_8RD", 10], ["rhsusf_8Rnd_Slug", 25],
+    ["arifle_AKM_F", 10], ["30Rnd_762x39_AK12_Mag_F", 25],
+    "16Rnd_9x21_Mag","10Rnd_9x21_Mag","MiniGrenade","SmokeShell",
     "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk","TRYK_B_tube_cyt",
     "V_BandollierB_blk","V_BandollierB_cbr","V_BandollierB_rgr","V_BandollierB_khk","V_BandollierB_oli","V_Rangemaster_belt","V_Press_F","V_TacVest_blk",
     "V_TacVestIR_blk","V_PlatecarrierIA1_dgtl",

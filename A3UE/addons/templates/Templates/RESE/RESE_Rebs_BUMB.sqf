@@ -146,18 +146,18 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "hgun_Pistol_heavy_02_F","hgun_Rook40_F",
+    "hgun_Pistol_heavy_02_F",
     "hgun_PDW2000_F","SMG_03C_hex","rhs_weap_m24sws",
     "30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag","50Rnd_570x28_SMG_03_tracer_blue","16Rnd_9x21_green_Mag","rhsusf_5rnd_762x51_m62_mag",
-    "6Rnd_45ACP_Cylinder","MiniGrenade","SmokeShell",
-    ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
+    "MiniGrenade","SmokeShell",
+    ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 5], ["IEDLandBig_Remote_Mag", 5],
     "B_FieldPack_blk",
     "UMBRELLAu","UmbrellaVest","Umbrella_H","WAINO_BLC_BK",
     ["ItemRadio", 5], ["ItemGPS", 5],
     "Binocular","NVGoggles_INDEP","rhsusf_acc_m24_muzzlehider_black","muzzle_snds_570",
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol",
     "B_FieldPack_blk","B_AssaultPack_blk",
-    ["launch_RPG32_F", 2], ["RPG32_F", 6]
+    ["rhs_weap_m72a7", 10]
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};

@@ -146,21 +146,22 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "hgun_Pistol_heavy_02_F","hgun_Rook40_F",
-    "hgun_PDW2000_F","rhs_weap_m27iar","rhs_weap_m24sws",
-    "30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag","30Rnd_556x45_Stanag_Tracer_Green","16Rnd_9x21_green_Mag","rhsusf_5rnd_762x51_m62_mag",
-    "6Rnd_45ACP_Cylinder","MiniGrenade","SmokeShell",
-    ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
+    "hgun_Pistol_heavy_02_F",
+    "rhs_weap_m249","rhs_weap_m27iar","rhs_weap_m24sws",
+    "30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag","30Rnd_556x45_Stanag_Tracer_Green","16Rnd_9x21_green_Mag","rhsusf_5rnd_762x51_m62_mag","rhsusf_200rnd_556x45_m855_box",
+    "MiniGrenade","SmokeShell",
+    ["IEDUrbanSmall_Remote_Mag", 20], ["IEDLandSmall_Remote_Mag", 20], ["IEDUrbanBig_Remote_Mag", 10], ["IEDLandBig_Remote_Mag", 10],
     "GXTS_MTF_np_g3_full_w","UMBRELLAu",
-    ["ItemRadio", 5], ["ItemGPS", 5],
+    ["ItemRadio", 10], ["ItemGPS", 10],
     "rhsusf_protech_helmet_rhino_ess","GXTS_MTF_helmet_comms","GXTS_MTF_opscore_bala2","Umbrella_H",
-    "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk","MTF_LBT","UmbrellaVest",
-    "V_BandollierB_blk","V_BandollierB_cbr","V_BandollierB_rgr","V_BandollierB_khk","V_BandollierB_oli","V_Rangemaster_belt",
+    "B_FieldPack_blk","MTF_LBT","UmbrellaVest",
+    "V_BandollierB_blk",
     "BHD_TACV1DSS","V_SSU_Carrier_Rig_MCAM_Black","V_SSU_Carrier_Special_Rig_MCAM_Black","V_CBRN_C","TAC_FS_FOL_B",
     "Binocular","NVGoggles_OPFOR","rhsusf_acc_m24_muzzlehider_black",
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol",
     "B_FieldPack_blk","B_AssaultPack_blk",
-    ["launch_RPG32_F", 2], ["RPG32_F", 6]
+    ["rhs_weap_m72a7", 20], ["launch_I_Titan_F", 2],
+    ["Titan_AA", 4]
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
