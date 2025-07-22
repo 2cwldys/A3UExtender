@@ -146,9 +146,11 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "hgun_Pistol_heavy_02_F",
-    "rhs_weap_m249","rhs_weap_m27iar","rhs_weap_m24sws",
-    "30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag","30Rnd_556x45_Stanag_Tracer_Green","16Rnd_9x21_green_Mag","rhsusf_5rnd_762x51_m62_mag","rhsusf_200rnd_556x45_m855_box",
+    "rhsusf_weap_m1911a1","rhsusf_weap_m9",
+    ["rhs_weap_M320", 20], ["rhs_mag_M441_HE", 20], ["rhs_mag_m714_White", 20], ["UGL_FlareWhite_Illumination_F", 20], ["PHEN_FSPLUS_ChemGrenade_AsphyxiantGasGrenade_40mm_3GL", 5],
+    "rhs_weap_m249","rhs_weap_m27iar","rhs_weap_m24sws","rhs_weap_MP7A2_folded",
+    "30Rnd_556x45_Stanag_Tracer_Green","16Rnd_9x21_green_Mag","rhsusf_mag_7x45acp_MHP","rhsusf_5rnd_762x51_m62_Mag","rhsusf_200rnd_556x45_m855_box",
+    "rhsusf_mag_40Rnd_46x30_JHP","rhsusf_mag_40Rnd_46x30_AP","rhsusf_mag_15Rnd_9x19_JHP","rhsusf_mag_15Rnd_9x19_FMJ",
     "MiniGrenade","SmokeShell",
     ["IEDUrbanSmall_Remote_Mag", 20], ["IEDLandSmall_Remote_Mag", 20], ["IEDUrbanBig_Remote_Mag", 10], ["IEDLandBig_Remote_Mag", 10],
     "GXTS_MTF_np_g3_full_w","UMBRELLAu",
