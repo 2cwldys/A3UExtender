@@ -27,8 +27,8 @@ private _hasEF = "ef" in A3A_enabledDLC;
 ["flagTexture", QPATHTOFOLDER(Templates\SW\reb_flag_co.paa)] call _fnc_saveToTemplate;
 ["flagMarkerType", "SW_MARKER_REB"] call _fnc_saveToTemplate;
 
-private _vehiclesBasic = ["SW_SpeederBikeR", "SWOP_scavengerspeeder"];
-private _vehiclesLightUnarmed = ["O_SWOP_landspeeder_1", "O_SWOP_HoverT_2"];
+private _vehiclesBasic = ["SW_SpeederBikeR","SWOP_scavengerspeeder"];
+private _vehiclesLightUnarmed = ["O_SWOP_landspeeder_1","O_SWOP_HoverT_2"];
 private _vehiclesLightArmed = ["O_SWOP_HoverTa_2"];
 private _vehiclesAt = ["O_SWOP_HoverTr_2"];
 private _VehTruck = [];
@@ -40,7 +40,7 @@ private _vehiclesMedical = [];
 
 private _vehiclesSupply = [];
 
-private _vehiclePlane = ["swop_aw", "swop_xw", "swop_xwf", "swop_yw", "swop_ywRed"];
+private _vehiclePlane = ["swop_aw","swop_xw","swop_xwf","swop_yw","swop_ywRed"];
 
 private _vehicleCivPlane = [];
 
@@ -50,7 +50,7 @@ private _civHelicopters = ["Swop_Uwing"];
 
 private _CivBoat = ["C_Rubberboat"];
 
-private _staticMG = ["Altur_base", "Hoth_Minigun", "EWEBSWBF"];
+private _staticMG = ["Altur_base","Hoth_Minigun","EWEBSWBF"];
 private _staticAT = ["I_static_AT_F"];
 private _staticAA = ["I_static_AA_F"];
 private _staticMortars = ["I_G_Mortar_01_F"];
@@ -194,7 +194,8 @@ private _faces = ["GreekHead_A3_02","GreekHead_A3_03","GreekHead_A3_04",
 "GreekHead_A3_14","Ioannou","Mavros","Sturrock"];
 ["voices", ["Male01GRE", "Male02GRE", "Male03GRE", "Male04GRE", "Male05GRE", "Male06GRE"]] call _fnc_saveToTemplate;
 ["faces", _faces] call _fnc_saveToTemplate;
-#include "Vanilla_Reb_Vehicle_Attributes.sqf"
+
+// #include "Vanilla_Reb_Vehicle_Attributes.sqf"
 
 //////////////////////////
 //       Loadouts       //
