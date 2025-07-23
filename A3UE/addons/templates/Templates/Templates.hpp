@@ -56,6 +56,46 @@ class Templates
         description = "This is a new template, called the A3 AAF (NEW)!"; // If this isn't included, no description will show (unless inherited from the base class.)
     };
 
+    class SW_REBS_REB : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\SW); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Reb"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\SW\reb_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "Rebel Alliance"; // Name shown in the select menu.
+        file = "SW_Reb_Rebels"; // The template file name - .sqf, that gets appended automatically.
+        description = "A courageous resistance movement fighting to restore freedom and democracy to the galaxy. Formed in secret to oppose the tyranny of the Galactic Empire, the Rebel Alliance unites smugglers, soldiers, senators, and Jedi in a desperate struggle against overwhelming odds. Armed with hope, cunning, and bravery, they are the spark that will ignite the fire of rebellion."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
+    class SW_RIV_PAR : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\SW); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Riv"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\SW\par_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "Saw's Partisans"; // Name shown in the select menu.
+        file = "SW_Riv_Partisans"; // The template file name - .sqf, that gets appended automatically.
+        description = "A radical insurgent group led by the hardened freedom fighter Saw Gerrera. Formed to combat tyranny long before the Rebel Alliance united, the Partisans wage a brutal guerrilla war against the Galactic Empire. Unafraid to use extreme methods and strike civilian targets, they operate on the edge of morality, valuing victory over diplomacy. Even allies view them with caution—fierce enemies of oppression, but too unpredictable to control."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
+    class SW_OCC_EMPIRE : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\SW); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Occ"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\SW\emp_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "Galactic Empire"; // Name shown in the select menu.
+        file = "SW_AI_Empire"; // The template file name - .sqf, that gets appended automatically.
+        description = "A ruthless authoritarian regime born from the ashes of the Republic, the Galactic Empire rules the galaxy with fear, order, and overwhelming military might. Under the iron fist of Emperor Palpatine and his enforcer Darth Vader, it crushes resistance, silences dissent, and seeks total domination through the power of the dark side and the dreaded Death Star."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
+    class SW_INV_EMPIRE : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\SW); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Inv"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = QPATHTOFOLDER(Templates\SW\emp_flag_co.paa); // Path to an icon to be displayed in the select menu.
+        name = "Galactic Empire"; // Name shown in the select menu.
+        file = "SW_AI_Empire"; // The template file name - .sqf, that gets appended automatically.
+        description = "A ruthless authoritarian regime born from the ashes of the Republic, the Galactic Empire rules the galaxy with fear, order, and overwhelming military might. Under the iron fist of Emperor Palpatine and his enforcer Darth Vader, it crushes resistance, silences dissent, and seeks total domination through the power of the dark side and the dreaded Death Star."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
     /*
         Here we are creating a completely new class that inherits from Vanilla_AAF_New.
 
