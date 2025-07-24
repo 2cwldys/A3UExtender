@@ -60,21 +60,21 @@ private _aa = ["O_JM_TX130m2_1"];
 private _transportBoat = ["B_T_Boat_Transport_01_F"];
 private _gunBoat = [];
 
-private _planesCAS = ["swop_tietorpe"];
+private _planesCAS = ["swop_tie_int","swop_tietorpe","swop_tiedef"];
 private _planesLargeCAS = [];
 
-private _planesAA = ["swop_tie_int"];
+private _planesAA = ["swop_tie_int","swop_tietorpe","swop_tiedef"];
 private _planesLargeAA = [];
 ["vehiclesPlanesTransport", ["swop_lambda"]] call _fnc_saveToTemplate;
-["vehiclesPlanesGunship", ["swop_tie"]] call _fnc_saveToTemplate;
+["vehiclesPlanesGunship", ["swop_tie_int","swop_tietorpe","swop_tiedef"]] call _fnc_saveToTemplate;
 
 private _transportHelicopters = ["swop_lambda"];
 
 private _helisLight = ["swop_lambda"];
-private _helisLightAttack = ["swop_tietorpe","swop_TIE_Stryker"];
-private _helisAttack = ["swop_tietorpe","swop_tieb"];
+private _helisLightAttack = ["swop_tie_int","swop_tietorpe","swop_tiedef","swop_TIE_Stryker"];
+private _helisAttack = ["swop_tie_int","swop_tietorpe","swop_tiedef","swop_tieb"];
 
-private _airPatrol = ["swop_tiedef"];
+private _airPatrol = ["swop_tie_int","swop_tietorpe","swop_tiedef"];
 
 private _artillery = ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F"];
 
@@ -84,8 +84,8 @@ private _artillery = ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F"];
     ["APC_Wheeled_01_mortar_base_lxWS",["64Rnd_60mm_Mo_guided_lxWS"]]
 ]] call _fnc_saveToTemplate;
 
-["uavsAttack", ["swop_TIE_Stryker"]] call _fnc_saveToTemplate;
-private _uavsPortable = ["SWOP_ProbeViper_Droid", "swop_tie"];
+["uavsAttack", ["swop_TIE_Stryker","swop_tietorpe"]] call _fnc_saveToTemplate;
+private _uavsPortable = ["SWOP_ProbeViper_Droid", "swop_tietorpe"];
 
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
 private _militiaLightArmed = ["O_SWOP_HoverTa_1"];
