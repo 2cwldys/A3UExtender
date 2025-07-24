@@ -22,7 +22,6 @@ private _faces = ["GreekHead_A3_02","GreekHead_A3_03","GreekHead_A3_04",
 
 ["voices", ["Male01GRE", "Male02GRE", "Male03GRE", "Male04GRE", "Male05GRE", "Male06GRE"]] call _fnc_saveToTemplate;
 ["faces", _faces] call _fnc_saveToTemplate; 
-["voices", []] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
